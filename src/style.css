@@ -523,3 +523,156 @@ footer {
   color: var(--color-text-light);
   font-size: 0.9rem;
 }
+
+/* Default Desktop Styles for Toggle Text */
+.mobile-text {
+  display: none;
+}
+
+.desktop-text {
+  display: inline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* Layout Adjustments */
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --font-size-3xl: 2.5rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Header & Nav */
+  .nav-container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .nav-top {
+    position: relative;
+    z-index: 102;
+  }
+
+  .nav-bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+  }
+
+  .nav-bottom.active {
+    transform: translateY(0);
+  }
+
+  .nav-bottom nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 103;
+    margin-left: 1rem;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text);
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Status Indicator - Mobile */
+  .status-indicator {
+    padding: 8px;
+    margin-left: 0;
+  }
+
+  .status-text {
+    display: none;
+    /* Hide text */
+  }
+
+  .status-dot {
+    margin-right: 0;
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Toggle - Mobile */
+  .mode-toggle {
+    margin-right: 10px;
+    padding: 2px;
+  }
+
+  .toggle-btn {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+    font-weight: 700;
+  }
+
+  /* Horizontal Scroll Cards */
+  .horizontal-scroll .card {
+    width: 280px;
+    min-width: 280px;
+  }
+
+  /* Hide custom cursor on touch devices */
+  .custom-cursor {
+    display: none;
+  }
+
+  body,
+  * {
+    cursor: auto !important;
+  }
+}

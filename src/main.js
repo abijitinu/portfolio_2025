@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const designerBtn = document.createElement('a');
     designerBtn.className = isArtist ? 'toggle-btn' : 'toggle-btn active';
-    designerBtn.textContent = 'Designer';
+    designerBtn.innerHTML = '<span class="desktop-text">Designer</span><span class="mobile-text">D</span>';
     designerBtn.href = '/';
     // Prevent default and animate before navigation
     designerBtn.addEventListener('click', (e) => {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const artistBtn = document.createElement('a');
     artistBtn.className = isArtist ? 'toggle-btn active' : 'toggle-btn';
-    artistBtn.textContent = 'Artist';
+    artistBtn.innerHTML = '<span class="desktop-text">Artist</span><span class="mobile-text">A</span>';
     artistBtn.href = '/artist.html';
     // Prevent default and animate before navigation
     artistBtn.addEventListener('click', (e) => {
@@ -123,10 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const dot = document.createElement('span');
     dot.className = isWorkHours ? 'status-dot online' : 'status-dot';
 
-    const text = document.createTextNode(isWorkHours ? 'Online' : 'Offline');
+    const textSpan = document.createElement('span');
+    textSpan.className = 'status-text';
+    textSpan.textContent = isWorkHours ? 'Online' : 'Offline';
 
     statusDiv.appendChild(dot);
-    statusDiv.appendChild(text);
+    statusDiv.appendChild(textSpan);
 
     // Append to nav-tools: Status, Toggle
     navTools.appendChild(statusDiv);
@@ -242,6 +244,54 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('mouseout', (e) => {
     if (e.target.closest('a, button, .card, .toggle-btn, input, textarea, select')) {
       cursor.classList.remove('hover');
+    }
+  });
+
+  // Hamburger Menu Logic
+  const navTop = document.querySelector('.nav-top');
+  const navBottom = document.querySelector('.nav-bottom');
+
+  if (navTop && navBottom) {
+    // Check if hamburger already exists to avoid duplicates
+    if (!document.querySelector('.hamburger')) {
+      const hamburger = document.createElement('div');
+      hamburger.className = 'hamburger';
+      hamburger.innerHTML = '<span></span><span></span><span></span>';
+
+      // Append to nav-top
+      navTop.appendChild(hamburger);
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navBottom.classList.toggle('active');
+
+        // Prevent scrolling when menu is open
+        if (navBottom.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Close menu when clicking a link
+      const navLinks = navBottom.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navBottom.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  }
+
+  // Handle Resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      const hamburger = document.querySelector('.hamburger');
+      if (hamburger) hamburger.classList.remove('active');
+      if (navBottom) navBottom.classList.remove('active');
+      document.body.style.overflow = '';
     }
   });
 

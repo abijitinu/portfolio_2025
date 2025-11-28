@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direct Mortgages Broker Dashboard - Case Study</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/project-layout.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="nav-top">
+                <a href="/" class="logo">Abijit Agamanandan.</a>
+                <div class="nav-tools"></div>
+            </div>
+            <div class="nav-bottom">
+                <nav>
+                    <a href="/" class="nav-link">Work</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="mailto:abijit.agaman@gmail.com" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="section" style="padding-top: 80px; padding-bottom: 40px;">
+            <div class="container">
+                <div>
+                    <div>
+                        <h1 class="text-hero" style="margin-bottom: 1rem;">Direct Mortgages Broker Dashboard</h1>
+                        <p class="text-h3"
+                            style="color: var(--color-text-light); font-weight: 400; max-width: 700px; margin-bottom: 2rem;">
+                            Building a Scalable Command Center for Direct Mortgages.
+                        </p>
+                    </div>
+
+                    <div class="project-stats-container">
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Company</div>
+                            <div class="project-stat-value">Coax Creative</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Client</div>
+                            <div class="project-stat-value">Direct Mortgages (Philip James) Ltd</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Timeline</div>
+                            <div class="project-stat-value">3 Months</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Platform</div>
+                            <div class="project-stat-value">Web App</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Image -->
+        <section style="margin-bottom: 80px;">
+            <div class="container">
+                <div
+                    style="width: 100%; height: 500px; background-color: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: #ccc; font-size: 1.5rem;">Hero Image: Dashboard Overview</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container project-layout">
+            <aside class="project-sidebar">
+                <nav class="toc-nav">
+                    <a href="#context" class="toc-link">Context & Role</a>
+                    <a href="#problem" class="toc-link">The Problem</a>
+                    <a href="#solution" class="toc-link">The Solution</a>
+                    <a href="#impact" class="toc-link">The Impact</a>
+                    <a href="#retrospective" class="toc-link">Retrospective</a>
+                </nav>
+            </aside>
+
+            <div class="project-content">
+                <!-- Context & Role -->
+                <section id="context" class="section" style="padding-top: 0;">
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">Context & Role</h2>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        <strong>The Background</strong>
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Direct Mortgages operates as the critical financial heartbeat of the Philip James estate agency
+                        network. Covering the North West (Manchester, Cheshire, etc.), they needed to process high
+                        volumes of applications while adhering to strict regulatory frameworks (Quilter Financial
+                        Planning).
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        <strong>The Brief</strong>
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        As the Lead Designer, I wasn't just asked to "skin" a database; I was tasked with architecting a
+                        unified digital command center. The goal was to consolidate fragmented workflows from multiple
+                        offices into one scalable platform that professionalized the client journey from viewing to
+                        completion.
+                    </p>
+
+                    <h2 id="problem" class="text-h2" style="margin-bottom: 1.5rem;">The Problem: Growing Pains & Data
+                        Silos</h2>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Before the redesign, the brokerage was struggling with "operational friction." As the team grew
+                        across varying locations (Ellesmere Port, Sale, Didsbury), their digital infrastructure couldn't
+                        keep up.
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        We identified three critical friction points through user analysis:
+                    </p>
+                    <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Fragmented Truth:</strong> There was no single source
+                            of truth. Client data lived in silos, making it impossible for management to see a holistic
+                            view of the business.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin Overload:</strong> High-value advisors were
+                            bogged down by repetitive manual entry (logging prospects, sending routine updates), which
+                            detracted from client-facing time.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>The "Black Box" Effect:</strong> Clients and agents
+                            often felt in the dark regarding application status, leading to anxiety and unnecessary
+                            chase-up calls.</li>
+                    </ul>
+
+                    <h2 id="solution" class="text-h2" style="margin-bottom: 1.5rem;">The Solution</h2>
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">A. The "At-a-Glance" Dashboard (Reducing Cognitive
+                        Load)</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        The primary dashboard was designed to answer one question for the broker the moment they log in:
+                        <em>"What needs my attention right now?"</em>
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Instead of a dense data table, I implemented a widget-based hierarchy:
+                    </p>
+                    <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Pipeline Visibility:</strong> A real-time funnel
+                            (e.g., 180 Active Clients vs. 20 Prospects) immediately informs brokers where they stand
+                            against targets.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Regional Oversight:</strong> A "Clients by Office"
+                            widget allows leadership to spot bottlenecks in specific branches (e.g., Tarporley vs. Sale)
+                            instantly.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Actionable Reminders:</strong> We moved away from
+                            static to-do lists to "Action Cards" (e.g., "Call HSBC" linked directly to the "Chase Broker
+                            Fee" task), reducing the clicks needed to complete a task.</li>
+                    </ul>
+
+                    <div
+                        style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #999;">[Image of dashboard UI design mortgage broker kpis]</span>
+                    </div>
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">B. The 360-Degree Client Profile (The Single Source
+                        of Truth)</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        To solve the fragmentation issue, we built the "Client 360" view. This is the heart of the
+                        system.
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        I designed this interface to mimic the linear progression of a mortgage application.
+                    </p>
+                    <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Visual Status Tracker:</strong> An interactive
+                            progress bar (0% to 100%) tracks milestones from "DIP" to "Mortgage Offer." This aligns the
+                            mental model of the advisor with the actual progress of the application.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Compliance Integration:</strong> Document management
+                            is dangerous if disorganized. I designed a categorized upload system (Proof of Income, ID,
+                            etc.) with integrated E-Sign capabilities to ensure the "paper trail" is audit-proof.</li>
+                    </ul>
+
+                    <div
+                        style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #999;">[Image of user profile interface design mortgage application
+                            tracker]</span>
+                    </div>
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">C. Standardizing Communication (Brand Consistency)
+                    </h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        One of the biggest risks for an in-house broker is inconsistent communication.
+                    </p>
+                    <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Template Engine:</strong> I designed a system where
+                            admins can create pre-approved message templates. This ensures that a "Mortgage Offer" email
+                            sent from the Withington office sounds exactly as professional as one from Heaton Moor.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>The Audit Log:</strong> A "Notification Centre"
+                            tracks every outbound digital touchpoint. This solves the "he said, she said" problem by
+                            creating an immutable history of client engagement.</li>
+                    </ul>
+
+                    <h2 id="impact" class="text-h2" style="margin-bottom: 1.5rem;">The Impact</h2>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        By shifting from disjointed spreadsheets to a User-Centric Dashboard, we achieved:
+                    </p>
+                    <ol
+                        style="list-style: decimal; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Operational Velocity:</strong> The "Frequent
+                            Operations" shortcuts significantly reduced the time-on-task for onboarding new clients.
+                        </li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Scalability:</strong> The modular design of the
+                            "Office Administration" tools means the system is future-proof. Adding a new branch or
+                            advisor is now a standardized 5-minute workflow, not an IT headache.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Client Trust:</strong> The transparency provided by
+                            the status trackers and professionalized communication tools helps mitigate the
+                            pressure-selling stigma often associated with estate agency mortgage brokers.</li>
+                    </ol>
+
+                    <h2 id="retrospective" class="text-h2" style="margin-bottom: 1.5rem;">Design Retrospective</h2>
+                    <p class="text-body"
+                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        This project reinforced that in complex fintech products, <strong>clarity is the most valuable
+                            feature.</strong> By surfacing the right data at the right time (e.g., the Renewal Reviews
+                        list), we didn't just design a tool for storing data; we designed a tool for generating
+                        business.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Next Project -->
+        <section class="section" style="border-top: 1px solid var(--color-border); margin-top: 40px;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <p class="text-secondary" style="margin-bottom: 0.5rem;">Next Project</p>
+                        <h3 class="text-h3" style="margin-bottom: 0.5rem;">Restrata Supervisor App</h3>
+                        <p class="text-body" style="color: var(--color-text-light);">Mobile App / Product Design</p>
+                    </div>
+                    <a href="/project-restrata-supervisor.html" class="btn btn-outline">View Case Study</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abijit Agamanandan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

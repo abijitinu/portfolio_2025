@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Designed by [Your Name]</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="nav-top">
+        <a href="/" class="logo">Abijit Agamanandan.</a>
+        <div class="nav-tools"></div>
+      </div>
+      <div class="nav-bottom">
+        <nav>
+          <a href="/" class="nav-link">Portfolio</a>
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Simple White Theme) -->
+    <section class="section" style="padding-top: 100px; padding-bottom: 60px;">
+      <div class="container">
+        <h1 class="text-hero" style="margin-bottom: 1rem;">Abijit Agamanandan.</h1>
+        <p class="text-h3"
+          style="color: var(--color-text-light); font-weight: 400; max-width: 700px; margin-bottom: 2rem;">
+          I create human-centric, delightful user experiences.
+        </p>
+        <p class="text-body" style="max-width: 600px; margin-bottom: 2rem; color: var(--color-text-light);">
+          As a Full Stack UX/UI Designer with over 5 years of experience, I prioritize designing digital products that
+          promote user wellbeing and ethics. I embrace the creative process of discovery to create impactful solutions
+          with business acumen.
+        </p>
+
+
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section id="work" class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="text-h2" style="margin-bottom: 2rem;">Selected Work</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ar">AR</button>
+          <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
+          <button class="filter-btn" data-filter="web-app">Web App</button>
+          <button class="filter-btn" data-filter="saas">SaaS</button>
+          <button class="filter-btn" data-filter="b2b">B2B</button>
+          <button class="filter-btn" data-filter="b2c">B2C</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="brand-management">Brand Management</button>
+          <button class="filter-btn" data-filter="design-system">Design System</button>
+          <button class="filter-btn" data-filter="ui-design">UI Design</button>
+        </div>
+
+        <div class="horizontal-scroll">
+          <!-- Project 1 -->
+          <a href="/project-ar-visualiser.html" class="card" data-category="ar mobile-app b2c">
+            <div class="card-image">
+              <!-- Placeholder -->
+              <span>Colour Visualiser Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Colour Visualiser</h3>
+              <p>Akzonobel, Dulux Paints</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">AR / Mobile App / B2C</p>
+            </div>
+          </a>
+
+          <!-- Project Restrata -->
+          <a href="/project-restrata-supervisor.html" class="card" data-category="mobile-app b2b">
+            <div class="card-image">
+              <span>Restrata Supervisor App Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Restrata Supervisor App</h3>
+              <p>Restrata</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Mobile App / B2B / Safety</p>
+            </div>
+          </a>
+
+          <!-- Project Direct Mortgages -->
+          <a href="/project-direct-mortgages.html" class="card" data-category="web-app b2b">
+            <div class="card-image">
+              <span>Direct Mortgages Dashboard Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Direct Mortgages Broker Dashboard</h3>
+              <p>Direct Mortgages (Philip James) Ltd</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Web App / B2B</p>
+            </div>
+          </a>
+
+          <!-- Project Web Designs Collection -->
+          <a href="/project-web-designs.html" class="card" data-category="web-app ui-design">
+            <div class="card-image">
+              <span>Web Design Collection Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Web Design Collection</h3>
+              <p>Various Projects</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">UI / Web Design / Gallery</p>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <!-- Project 2 (Hidden)
+          <a href="/project-perfit.html" class="card" data-category="saas b2b web-app">
+            <div class="card-image">
+              <span>Perfit Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Perfit E-Commerce</h3>
+              <p>Management Portal with HMI Integration</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">SaaS / B2B / Web App</p>
+            </div>
+          </a>
+          -->
+
+          <!-- Project 3 -->
+          <a href="/project-sales-portal.html" class="card" data-category="analytics ml web-app saas">
+            <div class="card-image">
+              <span>Sales Portal Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Receipt Sales Analysis Portal</h3>
+              <p>Mindtree</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Analytics / ML / Web App / SaaS
+              </p>
+            </div>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="/project-campaign-system.html" class="card" data-category="brand-management b2b">
+            <div class="card-image">
+              <span>Campaign System Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Campaign System</h3>
+              <p>P&G (Procter & Gamble)</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Brand Management / B2B</p>
+            </div>
+          </a>
+
+          <!-- Project 5 -->
+          <a href="/project-sita-design.html" class="card" data-category="design-system">
+            <div class="card-image">
+              <span>SITA Design System Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>SITA Design System</h3>
+              <p>Design System for Web Portals</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">UI / Scalable / System</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="section section-bg" style="text-align: left;">
+      <div class="container">
+        <h2 class="text-h2">Looking for a designer?</h2>
+        <p class="text-body" style="margin-bottom: 30px; max-width: 600px;">
+          I'm available for freelance projects and full-time roles. Let's create something amazing together.
+        </p>
+        <a href="/contact.html" class="btn btn-large">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background-color: #f5f5f7; padding: 40px 0; font-size: 12px; color: var(--color-text-secondary);">
+    <div class="container">
+      <div style="border-top: 1px solid #d2d2d7; padding-top: 20px; display: flex; justify-content: space-between;">
+        <p>Copyright © 2025 [Your Name]. All rights reserved.</p>
+        <div class="flex gap-sm">
+          <a href="#" style="color: var(--color-text);">Privacy Policy</a>
+          <a href="#" style="color: var(--color-text);">Terms of Use</a>
+          <a href="#" style="color: var(--color-text);">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

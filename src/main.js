@@ -74,15 +74,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const isArtist = window.location.pathname.includes('artist');
 
+    // Slider Element
+    const slider = document.createElement('div');
+    slider.className = 'toggle-slider';
+    toggleDiv.appendChild(slider);
+
     const designerBtn = document.createElement('a');
     designerBtn.className = isArtist ? 'toggle-btn' : 'toggle-btn active';
     designerBtn.textContent = 'Designer';
     designerBtn.href = '/';
+    // Prevent default and animate before navigation
+    designerBtn.addEventListener('click', (e) => {
+      if (isArtist) {
+        e.preventDefault();
+        updateSlider(designerBtn);
+        setTimeout(() => window.location.href = '/', 300);
+      }
+    });
 
     const artistBtn = document.createElement('a');
     artistBtn.className = isArtist ? 'toggle-btn active' : 'toggle-btn';
     artistBtn.textContent = 'Artist';
     artistBtn.href = '/artist.html';
+    // Prevent default and animate before navigation
+    artistBtn.addEventListener('click', (e) => {
+      if (!isArtist) {
+        e.preventDefault();
+        updateSlider(artistBtn);
+        setTimeout(() => window.location.href = '/artist.html', 300);
+      }
+    });
 
     toggleDiv.appendChild(designerBtn);
     toggleDiv.appendChild(artistBtn);
@@ -113,21 +134,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add margin to status
     statusDiv.style.marginRight = '20px';
+
+    // Function to update slider position
+    function updateSlider(activeBtn) {
+      if (!activeBtn) return;
+
+      // We need to wait for layout if it's not yet attached or rendered
+      requestAnimationFrame(() => {
+        const paddingLeft = 4; // matches CSS .mode-toggle padding
+        const left = activeBtn.offsetLeft;
+        const width = activeBtn.offsetWidth;
+
+        slider.style.transform = `translateX(${left}px)`;
+        slider.style.width = `${width}px`;
+      });
+    }
+
+    // Initial update
+    const activeBtn = isArtist ? artistBtn : designerBtn;
+    // Use a small timeout to ensure DOM is fully rendered and fonts loaded
+    setTimeout(() => updateSlider(activeBtn), 50);
+
+    // Update on resize
+    window.addEventListener('resize', () => {
+      const currentActive = toggleDiv.querySelector('.toggle-btn.active');
+      updateSlider(currentActive);
+    });
   }
 
-  // Simple scroll animation for elements
-  const observerOptions = {
-    threshold: 0.1
+  // Scroll Animation Observer
+  const scrollObserverOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const scrollObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only animate once
       }
     });
-  }, observerOptions);
+  }, scrollObserverOptions);
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    scrollObserver.observe(el);
+  });
 
   // Filter Logic
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -154,5 +206,43 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Custom Cursor Logic
+  const cursor = document.createElement('div');
+  cursor.classList.add('custom-cursor');
+  document.body.appendChild(cursor);
+
+  // Move cursor
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // Hover effect for interactive elements
+  const interactiveElements = document.querySelectorAll('a, button, .card, .toggle-btn, input, textarea, select');
+
+  interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.classList.add('hover');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hover');
+    });
+  });
+
+  // Re-apply listeners for dynamically added elements (like the toggle buttons) if needed, 
+  // or use event delegation. For now, since toggle buttons are added via JS, we might need to target them specifically or use delegation.
+  // Using delegation for robustness:
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.closest('a, button, .card, .toggle-btn, input, textarea, select')) {
+      cursor.classList.add('hover');
+    }
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest('a, button, .card, .toggle-btn, input, textarea, select')) {
+      cursor.classList.remove('hover');
+    }
+  });
 
 });

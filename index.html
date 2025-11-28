@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  <!-- Maintenance Banner -->
+  <div
+    style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500;">
+    🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
+  </div>
   <header>
     <div class="nav-container">
       <div class="nav-top">
@@ -29,12 +34,13 @@
     <!-- Hero Section (Simple White Theme) -->
     <section class="section" style="padding-top: 100px; padding-bottom: 60px;">
       <div class="container">
-        <h1 class="text-hero" style="margin-bottom: 1rem;">Abijit Agamanandan.</h1>
-        <p class="text-h3"
+        <h1 class="text-hero animate-on-scroll" style="margin-bottom: 1rem;">Abijit Agamanandan.</h1>
+        <p class="text-h3 animate-on-scroll delay-100"
           style="color: var(--color-text-light); font-weight: 400; max-width: 700px; margin-bottom: 2rem;">
           I create human-centric, delightful user experiences.
         </p>
-        <p class="text-body" style="max-width: 600px; margin-bottom: 2rem; color: var(--color-text-light);">
+        <p class="text-body animate-on-scroll delay-200"
+          style="max-width: 600px; margin-bottom: 2rem; color: var(--color-text-light);">
           As a Full Stack UX/UI Designer with over 5 years of experience, I prioritize designing digital products that
           promote user wellbeing and ethics. I embrace the creative process of discovery to create impactful solutions
           with business acumen.
@@ -47,10 +53,10 @@
     <!-- Featured Project -->
     <section id="work" class="section" style="padding-top: 0;">
       <div class="container">
-        <h2 class="text-h2" style="margin-bottom: 2rem;">Selected Work</h2>
+        <h2 class="text-h2 animate-on-scroll" style="margin-bottom: 2rem;">Selected Work</h2>
 
         <!-- Filters -->
-        <div class="filters">
+        <div class="filters animate-on-scroll delay-100">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="ar">AR</button>
           <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
@@ -67,56 +73,52 @@
 
         <div class="horizontal-scroll">
           <!-- Project 1 -->
-          <a href="/project-ar-visualiser.html" class="card" data-category="ar mobile-app b2c">
+          <div class="card" data-category="ar mobile-app b2c"
+            onclick="window.location.href='/project-ar-visualiser.html'" style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/colour_visualiser_thumbnail.png" alt="Colour Visualiser Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Colour Visualiser</span>
             </div>
             <div class="card-content">
               <h3>Colour Visualiser</h3>
-              <p>Akzonobel, Dulux Paints</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">AR / Mobile App / B2C</p>
+              <p class="text-secondary">Akzonobel, Dulux Paints</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project Restrata -->
-          <a href="/project-restrata-supervisor.html" class="card" data-category="mobile-app b2b">
+          <div class="card" data-category="mobile-app b2b"
+            onclick="window.location.href='/project-restrata-supervisor.html'" style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/restrata_supervisor_thumbnail.png" alt="Restrata Supervisor App Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Restrata Supervisor</span>
             </div>
             <div class="card-content">
               <h3>Restrata Supervisor App</h3>
-              <p>Restrata</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Mobile App / B2B / Safety</p>
+              <p class="text-secondary">Restrata</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project Direct Mortgages -->
-          <a href="/project-direct-mortgages.html" class="card" data-category="web-app b2b">
+          <div class="card" data-category="web-app b2b" onclick="window.location.href='/project-direct-mortgages.html'"
+            style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/direct_mortgages_thumbnail.png" alt="Direct Mortgages Dashboard Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Direct Mortgages</span>
             </div>
             <div class="card-content">
               <h3>Direct Mortgages Broker Dashboard</h3>
-              <p>Direct Mortgages (Philip James) Ltd</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Web App / B2B</p>
+              <p class="text-secondary">Direct Mortgages (Philip James) Ltd</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project Web Designs Collection -->
-          <a href="/project-web-designs.html" class="card" data-category="web-app ui-design">
+          <div class="card" data-category="web-app ui-design" onclick="window.location.href='/project-web-designs.html'"
+            style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/web_design_collection_thumbnail.png" alt="Web Design Collection Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Web Designs</span>
             </div>
             <div class="card-content">
               <h3>Web Design Collection</h3>
-              <p>Various Projects</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">UI / Web Design / Gallery</p>
+              <p class="text-secondary">Various Projects</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project 2 -->
           <!-- Project 2 (Hidden)
@@ -133,44 +135,40 @@
           -->
 
           <!-- Project 3 -->
-          <a href="/project-sales-portal.html" class="card" data-category="analytics ml web-app saas">
+          <div class="card" data-category="analytics ml web-app saas"
+            onclick="window.location.href='/project-sales-portal.html'" style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/sales_portal_thumbnail.png" alt="Sales Portal Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Sales Portal</span>
             </div>
             <div class="card-content">
               <h3>Receipt Sales Analysis Portal</h3>
-              <p>Mindtree</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Analytics / ML / Web App / SaaS
-              </p>
+              <p class="text-secondary">Mindtree</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project 4 -->
-          <a href="/project-campaign-system.html" class="card" data-category="brand-management b2b">
+          <div class="card" data-category="brand-management b2b"
+            onclick="window.location.href='/project-campaign-system.html'" style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/campaign_system_thumbnail.png" alt="Campaign System Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>Campaign System</span>
             </div>
             <div class="card-content">
               <h3>Campaign System</h3>
-              <p>P&G (Procter & Gamble)</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Brand Management / B2B</p>
+              <p class="text-secondary">P&G (Procter & Gamble)</p>
             </div>
-          </a>
+          </div>
 
           <!-- Project 5 -->
-          <a href="/project-sita-design.html" class="card" data-category="design-system">
+          <div class="card" data-category="design-system" onclick="window.location.href='/project-sita-design.html'"
+            style="cursor: pointer;">
             <div class="card-image">
-              <img src="/images/sita_design_system_thumbnail.png" alt="SITA Design System Preview"
-                style="width: 100%; height: 100%; object-fit: cover;">
+              <span>SITA Design System</span>
             </div>
             <div class="card-content">
               <h3>SITA Design System</h3>
-              <p>Design System for Web Portals</p>
-              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">UI / Scalable / System</p>
+              <p class="text-secondary">Design System for Web Portals</p>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -178,11 +176,11 @@
     <!-- Footer CTA -->
     <section class="section section-bg" style="text-align: left;">
       <div class="container">
-        <h2 class="text-h2">Looking for a designer?</h2>
-        <p class="text-body" style="margin-bottom: 30px; max-width: 600px;">
+        <h2 class="text-h2 animate-on-scroll">Looking for a designer?</h2>
+        <p class="text-body animate-on-scroll delay-100" style="margin-bottom: 30px; max-width: 600px;">
           I'm available for freelance projects and full-time roles. Let's create something amazing together.
         </p>
-        <a href="/contact.html" class="btn btn-large">Get in touch</a>
+        <a href="/contact.html" class="btn btn-large animate-on-scroll delay-200">Get in touch</a>
       </div>
     </section>
 

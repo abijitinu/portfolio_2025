@@ -146,14 +146,16 @@ header {
   z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
-  padding: 10px 0;
+  padding: 0;
+  /* Removed padding to let banner sit flush */
 }
 
 .nav-container {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 10px var(--spacing-md);
+  /* Added vertical padding here */
   display: flex;
   flex-direction: column;
   /* Stack rows */
@@ -173,9 +175,12 @@ header {
   width: 100%;
 }
 
+/* Nav Tools - Push to right on mobile */
 .nav-tools {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  /* Push to right */
 }
 
 .logo {
@@ -538,6 +543,20 @@ footer {
   display: inline;
 }
 
+/* Default Styles for Toggle Text & Hamburger */
+.mobile-text {
+  display: none;
+}
+
+.desktop-text {
+  display: inline;
+}
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
 
@@ -555,7 +574,7 @@ footer {
 
   /* Header & Nav */
   .nav-container {
-    padding: 0 var(--spacing-md);
+    padding: 10px var(--spacing-md);
   }
 
   .nav-top {
@@ -652,8 +671,10 @@ footer {
   }
 
   .toggle-btn {
-    padding: 4px 10px;
-    font-size: 0.75rem;
+    padding: 4px 8px;
+    /* Reduced padding */
+    font-size: 0.7rem;
+    /* Reduced font size */
   }
 
   .desktop-text {
@@ -680,20 +701,6 @@ footer {
   * {
     cursor: auto !important;
   }
-}
-
-/* Default Desktop Styles for Toggle Text */
-.mobile-text {
-  display: none;
-}
-
-.desktop-text {
-  display: inline;
-}
-
-/* Hamburger hidden by default (Desktop) */
-.hamburger {
-  display: none;
 }
 
 /* Desktop Header Layout - Single Row */

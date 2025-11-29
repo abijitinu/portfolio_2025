@@ -111,10 +111,22 @@
 
         /* Style for the content inside lightbox (replicating the div) */
         .lightbox-display {
-            width: 80vw;
-            height: 80vh;
-            background-color: #eee;
+            width: 90vw;
+            max-height: 90vh;
+            height: auto;
+            overflow-y: auto;
+            background-color: transparent;
             border-radius: 8px;
+            /* Hide scrollbar for cleaner look but allow scroll */
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE/Edge */
+        }
+
+        .lightbox-display::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
         }
 
         .lightbox-close {
@@ -208,15 +220,13 @@
 </head>
 
 <body>
-    <!-- Maintenance Banner -->
-    <div
-        style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500;">
-        🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
-    </div>
     <header>
-        <div class="nav-container">
+    <!-- Maintenance Banner -->
+    <div style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500; position: relative; z-index: 200;">
+        🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
+    </div>        <div class="nav-container">
             <div class="nav-top">
-                <a href="/" class="logo">Abijit Agamanandan.</a>
+                <a href="/" class="logo">Abijit <span class="desktop-text">Agamanandan.</span></a>
                 <div class="nav-tools"></div>
             </div>
             <div class="nav-bottom">
@@ -245,6 +255,29 @@
         <section class="section" style="padding-top: 0;">
             <div class="container">
                 <div class="masonry-grid">
+                    <!-- Item New -->
+                    <div class="masonry-item">
+                        <img src="./images/weekend-media.png" class="masonry-image" alt="Weekend Media Agency">
+                        <div class="masonry-overlay">
+                            <h3 class="masonry-title">Weekend Media Agency</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item New 2 -->
+                    <div class="masonry-item">
+                        <img src="./images/chalk-coffee.png" class="masonry-image" alt="Chalk Coffee">
+                        <div class="masonry-overlay">
+                            <h3 class="masonry-title">Chalk Coffee</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item New 3 -->
+                    <div class="masonry-item">
+                        <img src="./images/rubiks-tech.png" class="masonry-image" alt="Rubiks Tech Payments">
+                        <div class="masonry-overlay">
+                            <h3 class="masonry-title">Rubiks Tech Payments</h3>
+                        </div>
+                    </div>
                     <!-- Item 1 -->
                     <div class="masonry-item">
                         <div class="masonry-image h-medium"></div> <!-- Placeholder Image -->
@@ -337,7 +370,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Abijit Agamanandan. All rights reserved.</p>
+            <p>Crafted with 100% Vibe Coding</p>
         </div>
     </footer>
 
@@ -379,21 +412,26 @@
 
             // Function to update content
             function updateLightboxContent() {
-                // Since we are using placeholder divs, we'll just clone the style/class
-                // In a real scenario, we'd get the image src
                 const currentItem = items[currentIndex];
-                const currentImageDiv = currentItem.querySelector('.masonry-image');
-
-                // For now, let's just replicate the background color and maybe the title
-                // If these were real images, we would set an img src
+                const currentImageEl = currentItem.querySelector('.masonry-image');
 
                 // Reset content
                 lightboxDisplay.innerHTML = '';
+                lightboxDisplay.className = 'lightbox-display';
+                lightboxDisplay.style.backgroundColor = '';
 
-                // Create a display element (simulating the image)
-                // We'll just use the same classes to get the height/color, but make it fit the lightbox
-                // Actually, let's just make it a large colored block for now as per the placeholder
-                lightboxDisplay.className = 'lightbox-display ' + currentImageDiv.className.replace('masonry-image', '');
+                if (currentImageEl.tagName === 'IMG') {
+                    const img = document.createElement('img');
+                    img.src = currentImageEl.src;
+                    img.style.width = '100%';
+                    img.style.height = 'auto';
+                    img.style.display = 'block';
+                    lightboxDisplay.appendChild(img);
+                    lightboxDisplay.style.backgroundColor = 'transparent';
+                } else {
+                    // Placeholder logic
+                    lightboxDisplay.className = 'lightbox-display ' + currentImageEl.className.replace('masonry-image', '');
+                }
 
                 // Optional: Add title
                 const title = currentItem.querySelector('.masonry-title').textContent;

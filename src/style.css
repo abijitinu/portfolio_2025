@@ -744,20 +744,3 @@ footer {
     justify-content: flex-end;
   }
 }
-/* Ripple Effect for Touch Devices */
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1); /* Subtle dark ripple */
-  transform: scale(0);
-  animation: ripple-effect 0.6s linear;
-  pointer-events: none; /* Ignore clicks */
-  z-index: 9999;
-}
-
-@keyframes ripple-effect {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}

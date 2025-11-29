@@ -296,31 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Touch Ripple Effect
-  document.addEventListener('touchstart', (e) => {
-    // Only create ripple if it's a touch event
-    if (e.touches.length > 0) {
-      const touch = e.touches[0];
 
-      const ripple = document.createElement('div');
-      ripple.classList.add('ripple');
-
-      // Set size
-      const size = 100; // Fixed size for the ripple
-      ripple.style.width = `${size}px`;
-      ripple.style.height = `${size}px`;
-
-      // Position center of ripple at touch point
-      ripple.style.left = `${touch.clientX - size / 2}px`;
-      ripple.style.top = `${touch.clientY - size / 2}px`;
-
-      document.body.appendChild(ripple);
-
-      // Remove after animation
-      ripple.addEventListener('animationend', () => {
-        ripple.remove();
-      });
-    }
-  }, { passive: true });
 
 });

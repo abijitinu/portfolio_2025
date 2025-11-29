@@ -149,13 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         slider.style.transform = `translateX(${left}px)`;
         slider.style.width = `${width}px`;
+        slider.style.opacity = '1'; // Show slider after positioning
       });
     }
 
     // Initial update
     const activeBtn = isArtist ? artistBtn : designerBtn;
-    // Use a small timeout to ensure DOM is fully rendered and fonts loaded
-    setTimeout(() => updateSlider(activeBtn), 50);
+    // Use RAF to ensure DOM is ready
+    requestAnimationFrame(() => updateSlider(activeBtn));
 
     // Update on resize
     window.addEventListener('resize', () => {
@@ -294,5 +295,32 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
     }
   });
+
+  // Touch Ripple Effect
+  document.addEventListener('touchstart', (e) => {
+    // Only create ripple if it's a touch event
+    if (e.touches.length > 0) {
+      const touch = e.touches[0];
+
+      const ripple = document.createElement('div');
+      ripple.classList.add('ripple');
+
+      // Set size
+      const size = 100; // Fixed size for the ripple
+      ripple.style.width = `${size}px`;
+      ripple.style.height = `${size}px`;
+
+      // Position center of ripple at touch point
+      ripple.style.left = `${touch.clientX - size / 2}px`;
+      ripple.style.top = `${touch.clientY - size / 2}px`;
+
+      document.body.appendChild(ripple);
+
+      // Remove after animation
+      ripple.addEventListener('animationend', () => {
+        ripple.remove();
+      });
+    }
+  }, { passive: true });
 
 });

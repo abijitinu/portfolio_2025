@@ -11,10 +11,12 @@
 
 <body>
     <header>
-    <!-- Maintenance Banner -->
-    <div style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500; position: relative; z-index: 200;">
-        🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
-    </div>        <div class="nav-container">
+        <!-- Maintenance Banner -->
+        <div
+            style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500; position: relative; z-index: 200;">
+            🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
+        </div>
+        <div class="nav-container">
             <div class="nav-top">
                 <a href="/" class="logo">Abijit <span class="desktop-text">Agamanandan.</span></a>
                 <div class="nav-tools"></div>
@@ -52,8 +54,12 @@
                             <div class="project-stat-value">Direct Mortgages (Philip James) Ltd</div>
                         </div>
                         <div class="project-stat-group">
-                            <div class="project-stat-label">Timeline</div>
+                            <div class="project-stat-label">Duration</div>
                             <div class="project-stat-value">3 Months</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Team</div>
+                            <div class="project-stat-value">1 PM, 2 Devs</div>
                         </div>
                         <div class="project-stat-group">
                             <div class="project-stat-label">Platform</div>
@@ -77,22 +83,19 @@
         <div class="container project-layout">
             <aside class="project-sidebar">
                 <nav class="toc-nav">
-                    <a href="#context" class="toc-link">Context & Role</a>
-                    <a href="#problem" class="toc-link">The Problem</a>
+                    <a href="#context" class="toc-link">The Context</a>
+                    <a href="#brief" class="toc-link">The Brief</a>
+                    <a href="#audience" class="toc-link">The Audience</a>
+                    <a href="#process" class="toc-link">The Process</a>
                     <a href="#solution" class="toc-link">The Solution</a>
-                    <a href="#impact" class="toc-link">The Impact</a>
-                    <a href="#retrospective" class="toc-link">Retrospective</a>
+                    <a href="#outcome" class="toc-link">The Outcome</a>
                 </nav>
             </aside>
 
             <div class="project-content">
-                <!-- Context & Role -->
+                <!-- Content -->
                 <section id="context" class="section" style="padding-top: 0;">
-                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">Context & Role</h2>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        <strong>The Background</strong>
-                    </p>
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Context</h2>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         Direct Mortgages operates as the critical financial heartbeat of the Philip James estate agency
@@ -100,29 +103,23 @@
                         volumes of applications while adhering to strict regulatory frameworks (Quilter Financial
                         Planning).
                     </p>
+                </section>
+
+                <section id="brief" class="section" style="padding-top: 0;">
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Brief</h2>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        <strong>The Brief</strong>
-                    </p>
-                    <p class="text-body"
-                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
                         As the Lead Designer, I wasn't just asked to "skin" a database; I was tasked with architecting a
                         unified digital command center. The goal was to consolidate fragmented workflows from multiple
                         offices into one scalable platform that professionalized the client journey from viewing to
                         completion.
                     </p>
-
-                    <h2 id="problem" class="text-h2" style="margin-bottom: 1.5rem;">The Problem: Growing Pains & Data
-                        Silos</h2>
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">The Problem: Growing Pains & Data Silos</h3>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         Before the redesign, the brokerage was struggling with "operational friction." As the team grew
                         across varying locations (Ellesmere Port, Sale, Didsbury), their digital infrastructure couldn't
                         keep up.
-                    </p>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        We identified three critical friction points through user analysis:
                     </p>
                     <ul
                         style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
@@ -136,82 +133,114 @@
                             often felt in the dark regarding application status, leading to anxiety and unnecessary
                             chase-up calls.</li>
                     </ul>
+                </section>
 
-                    <h2 id="solution" class="text-h2" style="margin-bottom: 1.5rem;">The Solution</h2>
-
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">A. The "At-a-Glance" Dashboard (Reducing Cognitive
-                        Load)</h3>
+                <section id="audience" class="section" style="padding-top: 0;">
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Audience</h2>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        The primary dashboard was designed to answer one question for the broker the moment they log in:
-                        <em>"What needs my attention right now?"</em>
-                    </p>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        Instead of a dense data table, I implemented a widget-based hierarchy:
-                    </p>
-                    <ul
-                        style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>Pipeline Visibility:</strong> A real-time funnel
-                            (e.g., 180 Active Clients vs. 20 Prospects) immediately informs brokers where they stand
-                            against targets.</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Regional Oversight:</strong> A "Clients by Office"
-                            widget allows leadership to spot bottlenecks in specific branches (e.g., Tarporley vs. Sale)
-                            instantly.</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Actionable Reminders:</strong> We moved away from
-                            static to-do lists to "Action Cards" (e.g., "Call HSBC" linked directly to the "Chase Broker
-                            Fee" task), reducing the clicks needed to complete a task.</li>
-                    </ul>
-
-                    <div
-                        style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <span style="color: #999;">[Image of dashboard UI design mortgage broker kpis]</span>
-                    </div>
-
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">B. The 360-Degree Client Profile (The Single Source
-                        of Truth)</h3>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        To solve the fragmentation issue, we built the "Client 360" view. This is the heart of the
-                        system.
-                    </p>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        I designed this interface to mimic the linear progression of a mortgage application.
-                    </p>
-                    <ul
-                        style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>Visual Status Tracker:</strong> An interactive
-                            progress bar (0% to 100%) tracks milestones from "DIP" to "Mortgage Offer." This aligns the
-                            mental model of the advisor with the actual progress of the application.</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Compliance Integration:</strong> Document management
-                            is dangerous if disorganized. I designed a categorized upload system (Proof of Income, ID,
-                            etc.) with integrated E-Sign capabilities to ensure the "paper trail" is audit-proof.</li>
-                    </ul>
-
-                    <div
-                        style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <span style="color: #999;">[Image of user profile interface design mortgage application
-                            tracker]</span>
-                    </div>
-
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">C. Standardizing Communication (Brand Consistency)
-                    </h3>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        One of the biggest risks for an in-house broker is inconsistent communication.
+                        The platform serves two distinct user groups:
                     </p>
                     <ul
                         style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>Template Engine:</strong> I designed a system where
-                            admins can create pre-approved message templates. This ensures that a "Mortgage Offer" email
-                            sent from the Withington office sounds exactly as professional as one from Heaton Moor.</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>The Audit Log:</strong> A "Notification Centre"
-                            tracks every outbound digital touchpoint. This solves the "he said, she said" problem by
-                            creating an immutable history of client engagement.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Mortgage Brokers:</strong> Who need a fast, efficient
+                            way to manage applications and client communications.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Agency Leadership:</strong> Who require high-level
+                            visibility into performance metrics and regional bottlenecks.</li>
                     </ul>
+                </section>
 
-                    <h2 id="impact" class="text-h2" style="margin-bottom: 1.5rem;">The Impact</h2>
+                <section id="process" class="section" style="padding-top: 0;">
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Process</h2>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        We started by mapping the entire mortgage application lifecycle, from initial enquiry to
+                        completion.
+                    </p>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        <strong>Key activities included:</strong>
+                    </p>
+                    <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Workflow Analysis:</strong> Identifying redundant
+                            steps and manual data entry points that could be automated.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Information Architecture:</strong> Structuring the
+                            dashboard to prioritize "Actionable Items" over static data.</li>
+                    </ul>
+                </section>
+
+                <h2 id="solution" class="text-h2" style="margin-bottom: 1.5rem;">The Solution</h2>
+
+                <h3 class="text-h3" style="margin-bottom: 1rem;">A. The "At-a-Glance" Dashboard (Reducing Cognitive
+                    Load)</h3>
+                <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                    The primary dashboard was designed to answer one question for the broker the moment they log in:
+                    <em>"What needs my attention right now?"</em>
+                </p>
+                <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                    Instead of a dense data table, I implemented a widget-based hierarchy:
+                </p>
+                <ul
+                    style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Pipeline Visibility:</strong> A real-time funnel
+                        (e.g., 180 Active Clients vs. 20 Prospects) immediately informs brokers where they stand
+                        against targets.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Regional Oversight:</strong> A "Clients by Office"
+                        widget allows leadership to spot bottlenecks in specific branches (e.g., Tarporley vs. Sale)
+                        instantly.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Actionable Reminders:</strong> We moved away from
+                        static to-do lists to "Action Cards" (e.g., "Call HSBC" linked directly to the "Chase Broker
+                        Fee" task), reducing the clicks needed to complete a task.</li>
+                </ul>
+
+                <div
+                    style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <span style="color: #999;">[Image of dashboard UI design mortgage broker kpis]</span>
+                </div>
+
+                <h3 class="text-h3" style="margin-bottom: 1rem;">B. The 360-Degree Client Profile (The Single Source
+                    of Truth)</h3>
+                <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                    To solve the fragmentation issue, we built the "Client 360" view. This is the heart of the
+                    system.
+                </p>
+                <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                    I designed this interface to mimic the linear progression of a mortgage application.
+                </p>
+                <ul
+                    style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Visual Status Tracker:</strong> An interactive
+                        progress bar (0% to 100%) tracks milestones from "DIP" to "Mortgage Offer." This aligns the
+                        mental model of the advisor with the actual progress of the application.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Compliance Integration:</strong> Document management
+                        is dangerous if disorganized. I designed a categorized upload system (Proof of Income, ID,
+                        etc.) with integrated E-Sign capabilities to ensure the "paper trail" is audit-proof.</li>
+                </ul>
+
+                <div
+                    style="margin-bottom: 3rem; background-color: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <span style="color: #999;">[Image of user profile interface design mortgage application
+                        tracker]</span>
+                </div>
+
+                <h3 class="text-h3" style="margin-bottom: 1rem;">C. Standardizing Communication (Brand Consistency)
+                </h3>
+                <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                    One of the biggest risks for an in-house broker is inconsistent communication.
+                </p>
+                <ul
+                    style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Template Engine:</strong> I designed a system where
+                        admins can create pre-approved message templates. This ensures that a "Mortgage Offer" email
+                        sent from the Withington office sounds exactly as professional as one from Heaton Moor.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>The Audit Log:</strong> A "Notification Centre"
+                        tracks every outbound digital touchpoint. This solves the "he said, she said" problem by
+                        creating an immutable history of client engagement.</li>
+                </ul>
+
+                <section id="outcome" class="section" style="padding-top: 0;">
+                    <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Outcome</h2>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         By shifting from disjointed spreadsheets to a User-Centric Dashboard, we achieved:

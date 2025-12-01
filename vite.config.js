@@ -17,6 +17,7 @@ export default defineConfig({
                 projectSales: resolve(__dirname, 'project-sales-portal.html'),
                 projectSita: resolve(__dirname, 'project-sita-design.html'),
                 projectRestrata: resolve(__dirname, 'project-restrata-supervisor.html'),
+                projectThoughtBubble: resolve(__dirname, 'project-thought-bubble.html'),
             },
         },
     },

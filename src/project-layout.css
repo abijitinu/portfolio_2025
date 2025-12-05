@@ -64,3 +64,58 @@
         /* Hide sidebar on mobile/tablet for now, or make it a top bar */
     }
 }
+
+/* Solution Image Grids (Restrata) */
+.solution-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* For direct children images (3-up flow) */
+.solution-grid>img {
+    width: 28%;
+    height: auto;
+    border-radius: 34px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* For wrapper divs (2-up flow) */
+.solution-item-wrapper {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solution-item-wrapper>img {
+    width: 80%;
+    height: auto;
+    border-radius: 34px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .solution-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solution-grid>img {
+        width: 80%;
+        /* Stacked images are larger */
+        margin-bottom: 2rem;
+    }
+
+    .solution-item-wrapper {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .solution-item-wrapper>img {
+        width: 80%;
+    }
+}

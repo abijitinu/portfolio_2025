@@ -744,3 +744,50 @@ footer {
     justify-content: flex-end;
   }
 }
+
+/* Pinterest / Masonry Layout */
+.pinterest-grid {
+  column-count: 3;
+  column-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pinterest-grid .card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: inline-block;
+  /* Prevents column splitting issues in some browsers */
+}
+
+/* Responsive adjustments for Pinterest Grid */
+@media (max-width: 1024px) {
+  .pinterest-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .pinterest-grid {
+    column-count: 1;
+  }
+}
+
+/* Work Sticky Header */
+.work-header-sticky {
+  position: sticky;
+  top: 100px;
+  /* Positions it below the main sticky header */
+  background-color: var(--color-bg);
+  /* Opaque background to hide scrolling items */
+  z-index: 90;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Ensure filters margin doesn't cause issues */
+.work-header-sticky .filters {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  /* Add padding here instead of margin to include in sticky area */
+}

@@ -791,3 +791,33 @@ footer {
   padding-bottom: 2rem;
   /* Add padding here instead of margin to include in sticky area */
 }
+
+/* Mobile Filter Scroll */
+@media (max-width: 768px) {
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    /* Space for scrollbar if visible, or touch target */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+    margin-right: -1.5rem;
+    /* Counteract container padding */
+    padding-right: 1.5rem;
+    /* Ensure last item is reachable */
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar Chrome/Safari */
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    /* Prevent text wrapping inside buttons */
+    flex: 0 0 auto;
+    /* Prevent buttons from shrinking */
+  }
+}

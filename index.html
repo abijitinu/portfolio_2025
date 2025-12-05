@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Abijit's Portfolio</title>
+  <script type="module" crossorigin src="/assets/main-ByzGwH_R.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DwdBob8_.css">
+</head>
+
+<body>
+  <header>
+    <!-- Maintenance Banner -->
+    <div
+      style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500; position: relative; z-index: 200;">
+      🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
+    </div>
+    <div class="nav-container">
+      <div class="nav-top">
+        <a href="/" class="logo">Abijit <span class="desktop-text">Agamanandan.</span></a>
+        <div class="nav-tools"></div>
+      </div>
+      <div class="nav-bottom">
+        <nav>
+          <a href="/" class="nav-link">Portfolio</a>
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Simple White Theme) -->
+    <section class="section" style="padding-top: 100px; padding-bottom: 60px;">
+      <div class="container">
+        <h1 class="text-hero animate-on-scroll" style="margin-bottom: 1rem;">UX/UI Designer</h1>
+        <p class="text-h3 animate-on-scroll delay-100"
+          style="color: var(--color-text-light); font-weight: 400; max-width: 700px; margin-bottom: 2rem;">
+          I create human-centric, delightful user experiences.
+        </p>
+        <p class="text-body animate-on-scroll delay-200"
+          style="max-width: 600px; margin-bottom: 2rem; color: var(--color-text-light);">
+          As a Full Stack UX/UI Designer with over 5 years of experience, I prioritize designing digital products that
+          promote user wellbeing and ethics. I embrace the creative process of discovery to create impactful solutions
+          with business acumen.
+        </p>
+
+
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section id="work" class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="text-h2 animate-on-scroll" style="margin-bottom: 2rem;">Selected Work</h2>
+
+        <!-- Filters -->
+        <div class="filters animate-on-scroll delay-100">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ar">AR</button>
+          <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
+          <button class="filter-btn" data-filter="web-app">Web App</button>
+          <button class="filter-btn" data-filter="saas">SaaS</button>
+          <button class="filter-btn" data-filter="b2b">B2B</button>
+          <button class="filter-btn" data-filter="b2c">B2C</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="brand-management">Brand Management</button>
+          <button class="filter-btn" data-filter="design-system">Design System</button>
+          <button class="filter-btn" data-filter="ui-design">UI Design</button>
+        </div>
+
+        <div class="horizontal-scroll">
+          <!-- Project Thought Bubble -->
+          <div class="card" data-category="mobile-app b2c" onclick="window.location.href='/project-thought-bubble.html'"
+            style="cursor: pointer;">
+            <div class="card-image" style="aspect-ratio: auto; height: auto; background: none;">
+              <img src="/images/thought-bubble/hero_v2.png" alt="Thought Bubble"
+                style="width: 100%; height: auto; display: block;">
+            </div>
+            <div class="card-content">
+              <h3>Thought Bubble</h3>
+              <p class="text-secondary">Personal Project</p>
+            </div>
+          </div>
+          <div class="card" data-category="ar mobile-app b2c"
+            onclick="window.location.href='/project-ar-visualiser.html'" style="cursor: pointer;">
+            <div class="card-image" style="aspect-ratio: 1/1; padding: 0;">
+              <img src="/images/ar-visualiser/home-card-v4.png" alt="Colour Visualiser"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="card-content">
+              <h3>Colour Visualiser</h3>
+              <p class="text-secondary">Akzonobel, Dulux Paints</p>
+            </div>
+          </div>
+
+          <!-- Project Restrata -->
+          <div class="card" data-category="mobile-app b2b"
+            onclick="window.location.href='/project-restrata-supervisor.html'" style="cursor: pointer;">
+            <div class="card-image">
+              <span>Restrata Supervisor</span>
+            </div>
+            <div class="card-content">
+              <h3>Restrata Supervisor App</h3>
+              <p class="text-secondary">Restrata</p>
+            </div>
+          </div>
+
+          <!-- Project Direct Mortgages -->
+          <div class="card" data-category="web-app b2b" onclick="window.location.href='/project-direct-mortgages.html'"
+            style="cursor: pointer;">
+            <div class="card-image">
+              <span>Direct Mortgages</span>
+            </div>
+            <div class="card-content">
+              <h3>Direct Mortgages Broker Dashboard</h3>
+              <p class="text-secondary">Direct Mortgages (Philip James) Ltd</p>
+            </div>
+          </div>
+
+          <!-- Project Web Designs Collection -->
+          <div class="card" data-category="web-app ui-design" onclick="window.location.href='/project-web-designs.html'"
+            style="cursor: pointer;">
+            <div class="card-image">
+              <span>Web Designs</span>
+            </div>
+            <div class="card-content">
+              <h3>Web Design Collection</h3>
+              <p class="text-secondary">Various Projects</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <!-- Project 2 (Hidden)
+          <a href="/project-perfit.html" class="card" data-category="saas b2b web-app">
+            <div class="card-image">
+              <span>Perfit Preview</span>
+            </div>
+            <div class="card-content">
+              <h3>Perfit E-Commerce</h3>
+              <p>Management Portal with HMI Integration</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">SaaS / B2B / Web App</p>
+            </div>
+          </a>
+          -->
+
+          <!-- Project 3 -->
+          <div class="card" data-category="analytics ml web-app saas"
+            onclick="window.location.href='/project-sales-portal.html'" style="cursor: pointer;">
+            <div class="card-image">
+              <span>Sales Portal</span>
+            </div>
+            <div class="card-content">
+              <h3>Receipt Sales Analysis Portal</h3>
+              <p class="text-secondary">Mindtree</p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="card" data-category="brand-management b2b"
+            onclick="window.location.href='/project-campaign-system.html'" style="cursor: pointer;">
+            <div class="card-image">
+              <span>Campaign System</span>
+            </div>
+            <div class="card-content">
+              <h3>Campaign System</h3>
+              <p class="text-secondary">P&G (Procter & Gamble)</p>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="card" data-category="design-system" onclick="window.location.href='/project-sita-design.html'"
+            style="cursor: pointer;">
+            <div class="card-image">
+              <span>SITA Design System</span>
+            </div>
+            <div class="card-content">
+              <h3>SITA Design System</h3>
+              <p class="text-secondary">Design System for Web Portals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="section section-bg" style="text-align: left;">
+      <div class="container">
+        <h2 class="text-h2 animate-on-scroll">Looking for a designer?</h2>
+        <p class="text-body animate-on-scroll delay-100" style="margin-bottom: 30px; max-width: 600px;">
+          I'm available for freelance projects and full-time roles. Let's create something amazing together.
+        </p>
+        <a href="/contact.html" class="btn btn-large animate-on-scroll delay-200">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background-color: #f5f5f7; padding: 40px 0; font-size: 12px; color: var(--color-text-secondary);">
+    <div class="container">
+      <div style="border-top: 1px solid #d2d2d7; padding-top: 20px; display: flex; justify-content: space-between;">
+        <p>Crafted with 100% Vibe Coding</p>
+        <div class="flex gap-sm">
+          <a href="#" style="color: var(--color-text);">Privacy Policy</a>
+          <a href="#" style="color: var(--color-text);">Terms of Use</a>
+          <a href="#" style="color: var(--color-text);">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

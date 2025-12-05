@@ -57,7 +57,7 @@
                         </div>
                         <div class="project-stat-group">
                             <div class="project-stat-label">Role</div>
-                            <div class="project-stat-value">Product Designer (UI/UX)</div>
+                            <div class="project-stat-value">UI/UX Designer</div>
                         </div>
                         <div class="project-stat-group">
                             <div class="project-stat-label">Duration</div>
@@ -79,10 +79,8 @@
         <!-- Main Image -->
         <section style="margin-bottom: 80px;">
             <div class="container">
-                <div
-                    style="width: 100%; height: 500px; background-color: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: #ccc; font-size: 1.5rem;">The "Hero" Image: Dashboard (POB View)</span>
-                </div>
+                <img src="/images/restrata_images/restrata_hero_v3.png" alt="Restrata Supervisor App Hero"
+                    style="width: 100%; height: auto; border-radius: 36px; display: block;">
             </div>
         </section>
 
@@ -114,11 +112,18 @@
                     </p>
                     <p class="text-body"
                         style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        While Restrata offers a "Lone Worker" app for individual employees to check in and signal
-                        distress, they identified a gap in the leadership layer. Supervisors on complex industrial sites
-                        (like oil rigs or refineries) needed a dedicated tool to manage <em>mass</em> accountability.
-                        They needed to move from manual, clipboard-based headcounts to a digital "operating system for
-                        resilience" that offers real-time visibility into their entire workforce.
+                        Restrata’s ecosystem is anchored by their <strong>Employee Safety App</strong>, a powerful tool
+                        for
+                        individual protection. It features <strong>verified check-ins</strong> (via Face ID), pairing
+                        with
+                        <strong>BLE panic buttons</strong>, and "task" tracking to monitor lone workers in real-time. It
+                        even uses <strong>prohibitive geo-fences</strong> to alert users of high-risk zones.<br><br>
+
+                        However, a gap existed in the <em>leadership</em> layer. While the app engaged the individual,
+                        Supervisors on complex industrial sites (like oil rigs) lacked a dedicated tool to manage this
+                        stream of data for <em>mass</em> accountability. They needed to move from manual headcounts to a
+                        digital command center that could visualize these real-time signals—from missed check-ins to
+                        geo-fence breaches.
                     </p>
 
                     <h2 id="brief" class="text-h2" style="margin-bottom: 1.5rem;">The Brief</h2>
@@ -129,7 +134,8 @@
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         My task was to design the <strong>Supervisor Module</strong> for the Restrata ecosystem. While
-                        the standard employee app focuses on <em>personal</em> safety (panic buttons, journey logging),
+                        the standard employee app focuses on <em>personal</em> safety (BLE panic buttons, verified
+                        check-ins),
                         this Supervisor App needed to handle <em>operational</em> command.
                     </p>
                     <h3 class="text-h3" style="margin-bottom: 1rem;">The constraints were significant:</h3>
@@ -228,48 +234,87 @@
                         guests, ensuring both security and hospitality are maintained.
                     </p>
 
-                    <h2 id="solution" class="text-h2" style="margin-bottom: 1.5rem;">The Solution</h2>
-                    <div class="grid grid-2" style="gap: 2rem; margin-bottom: 3rem;">
-                        <div class="card">
-                            <div class="card-image"
-                                style="height: 400px; display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; color: #999;">
-                                <span>Active Muster (Timer & Casualty Count)</span>
+                    <h2 id="solution" class="text-h2" style="margin-bottom: 2rem;">The Solution</h2>
+
+                    <!-- 1. Dashboard & POB -->
+                    <div style="margin-bottom: 4rem;">
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">1. The Command Center</h3>
+                        <p class="text-body" style="margin-bottom: 2rem; color: var(--color-text-light);">
+                            A single source of truth for site safety. The Dashboard gives an immediate high-level
+                            overview, while the POB (People on Board) view breaks down personnel by specific zones.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <div
+                                style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+                                <img src="/images/restrata_images/Dashboard.png" alt="Site Overview"
+                                    style="width: 80%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1rem;">
+                                <span style="font-size: 0.9rem; color: var(--color-text-light);">Site Overview</span>
                             </div>
-                            <div class="card-content">
-                                <h3>The "Action" Shot</h3>
-                                <p>Shows the timer and casualty count (Red/Green indicators) during an active muster.
-                                </p>
+                            <div
+                                style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+                                <img src="/images/restrata_images/POB.png" alt="Zone Breakdown"
+                                    style="width: 80%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1rem;">
+                                <span style="font-size: 0.9rem; color: var(--color-text-light);">Zone Breakdown</span>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-image"
-                                style="height: 400px; display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; color: #999;">
-                                <span>NFC Scan Modal</span>
-                            </div>
-                            <div class="card-content">
-                                <h3>The "Interaction" Detail</h3>
-                                <p>NFC scanning interface that allows supervisors to use their mobile device as a card
-                                    reader.</p>
-                            </div>
+                    </div>
+
+                    <!-- 2. Muster Flow -->
+                    <div style="margin-bottom: 4rem;">
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">2. The Muster Workflow</h3>
+                        <p class="text-body" style="margin-bottom: 2rem; color: var(--color-text-light);">
+                            Designed for panic scenarios. The flow moves from initiation (distinguishing between Drill
+                            vs. Real Emergency) to a high-contrast "Focus Mode" for the active count.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <img src="/images/restrata_images/Muster flow 1.png" alt="Muster Initiation"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="/images/restrata_images/Muster flow 2.png" alt="Active Muster Timer"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="/images/restrata_images/Muster flow 3.png" alt="Muster Completion"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                         </div>
-                        <div class="card">
-                            <div class="card-image"
-                                style="height: 400px; display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; color: #999;">
-                                <span>Visitor List (VIP/Status)</span>
+                    </div>
+
+                    <!-- 3. Access & Identity -->
+                    <div style="margin-bottom: 4rem;">
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">3. Identity & Access</h3>
+                        <p class="text-body" style="margin-bottom: 2rem; color: var(--color-text-light);">
+                            Managing individuals, from scanning badges via NFC to viewing detailed profiles and contact
+                            lists.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <img src="/images/restrata_images/Access Control.png" alt="Access Control"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="/images/restrata_images/Contacts.png" alt="Contacts"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="/images/restrata_images/Profile.png" alt="Profile"
+                                style="width: 28%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+
+                    <!-- 4. Visitor Management -->
+                    <div style="margin-bottom: 4rem;">
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">4. Visitor Management</h3>
+                        <p class="text-body" style="margin-bottom: 2rem; color: var(--color-text-light);">
+                            Handling the variable risk of external guests.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <div
+                                style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+                                <img src="/images/restrata_images/Visitors 1.png" alt="Visitors List"
+                                    style="width: 80%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1rem;">
                             </div>
-                            <div class="card-content">
-                                <h3>The "List" View</h3>
-                                <p>Visitor Management flow showing complex status tags (VIP, Arrived, Expected).</p>
+                            <div
+                                style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+                                <img src="/images/restrata_images/Visitors 2.png" alt="Visitor Details"
+                                    style="width: 80%; height: auto; border-radius: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 1rem;">
                             </div>
                         </div>
                     </div>
 
                     <h2 id="outcome" class="text-h2" style="margin-bottom: 1.5rem;">The Outcome</h2>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        <strong>"What was the impact?"</strong>
-                    </p>
-                    <p class="text-body"
+                    <p class="text-body" <p class="text-body"
                         style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
                         The Supervisor App successfully extends Restrata's "resilienceOS" into the field. By empowering
                         supervisors with the tools to run digital musters, we reduced the time required to account for

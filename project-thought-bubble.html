@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DZgy0Lux.svg">
+    <title>Thought Bubbles - Case Study</title>
+  <script type="module" crossorigin src="/assets/main-cvHD8Nsv-OE0St5E_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-cvHD8Nsv-cvHD8Nsv.css">
+  <link rel="stylesheet" crossorigin href="/assets/project-layout-BI_RbJuC-BI_RbJuC.css">
+</head>
+
+<body>
+    <header>
+        <!-- Maintenance Banner -->
+        <div
+            style="background-color: #8A2BE2; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500; position: relative; z-index: 200;">
+            🚧 Please note: This website is currently under construction. Stay tuned for the full experience! 🚧
+        </div>
+        <div class="nav-container">
+            <div class="nav-top">
+                <a href="/" class="logo">Abijit <span class="desktop-text">Agamanandan.</span></a>
+                <div class="nav-tools"></div>
+            </div>
+            <div class="nav-bottom">
+                <nav>
+                    <a href="/" class="nav-link">Work</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="section" style="padding-top: 80px; padding-bottom: 40px;">
+            <div class="container">
+                <div>
+                    <div>
+                        <h1 class="text-hero" style="margin-bottom: 1rem;">Thought Bubbles</h1>
+                        <p class="text-h3"
+                            style="color: var(--color-text-light); font-weight: 400; max-width: 800px; margin-bottom: 2rem;">
+                            Designing the Hyper-Local, Ephemeral Social Network.
+                        </p>
+                        <!-- Tech stack tags -->
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <span
+                                style="background: #f5f5f7; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; color: #333;">Swift
+                                5.9</span>
+                            <span
+                                style="background: #f5f5f7; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; color: #333;">SwiftUI</span>
+                            <span
+                                style="background: #f5f5f7; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; color: #333;">MapKit</span>
+                        </div>
+
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://github.com/abijitinu/thought_bubble" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--color-text); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--color-text);">
+                                View Source on GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-stats-container">
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Role</div>
+                            <div class="project-stat-value">Product Designer & Developer</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Team</div>
+                            <div class="project-stat-value">Solo Project</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Duration</div>
+                            <div class="project-stat-value">6 Weeks</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Platform</div>
+                            <div class="project-stat-value">iOS (SwiftUI)</div>
+                        </div>
+                        <div class="project-stat-group">
+                            <div class="project-stat-label">Status</div>
+                            <div class="project-stat-value">In Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Image -->
+        <div class="container" style="margin-bottom: 60px;">
+            <img src="/assets/hero-CfLwTn77.png" alt="Thought Bubble App Showcase"
+                style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        </div>
+
+
+
+        <div class="container project-layout">
+            <aside class="project-sidebar">
+                <nav class="toc-nav">
+                    <a href="#context-brief" class="toc-link">Context & Brief</a>
+                    <a href="#problem" class="toc-link">The Problem</a>
+                    <a href="#process" class="toc-link">Design Process</a>
+                    <a href="#solution" class="toc-link">Final Solution</a>
+                    <a href="#reflection" class="toc-link">Reflection</a>
+                    <a href="#app-demo" class="toc-link">Prototype</a>
+
+                </nav>
+            </aside>
+
+            <div class="project-content">
+
+                <!-- 1. The Context & Brief -->
+                <section id="context-brief" class="section" style="padding-top: 0;">
+                    <div style="max-width: 800px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">1. The Context & Brief</h2>
+                        <p class="text-body"
+                            style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            <strong>The Context:</strong> In a post-pandemic world, we are more online than ever, yet
+                            our physical communities feel increasingly fragmented. We walk past hundreds of people daily
+                            but have zero access to their internal world.
+                        </p>
+                        <p class="text-body"
+                            style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            <strong>The Brief:</strong> Design and build a functional iOS prototype that allows people
+                            to connect based on <em>immediate shared intent</em> without the toxicity of traditional
+                            social media.
+                        </p>
+
+                        <table
+                            style="width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 1rem; color: var(--color-text-light);">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="text-align: left; padding: 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text);">
+                                        Key Constraint</th>
+                                    <th
+                                        style="text-align: left; padding: 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text);">
+                                        Philosophical Alignment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        <strong>Strict 24-Hour Lifespan</strong>
+                                    </td>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        Anti-archiving; encourages immediacy and transience.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        <strong>Complete Anonymity (No PII)</strong>
+                                    </td>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        Anti-judgment; encourages vulnerability and honesty.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        <strong>Strict Local Focus (Max 100 Miles)</strong>
+                                    </td>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        Anti-globalization; unites physical communities.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        <strong>No Meetup Policy</strong>
+                                    </td>
+                                    <td style="padding: 12px 0; border-bottom: 1px solid var(--color-border);">
+                                        Safety-first; connection is emotional, not transactional.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- 2. The Problem -->
+                <section id="problem" class="section" style="padding-top: 0;">
+                    <div style="max-width: 800px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">2. The Problem Statement: The Digital Paradox
+                        </h2>
+
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">Problem: The Hyper-Connected, Yet Isolated
+                            Human</h3>
+                        <p class="text-body"
+                            style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            The digital revolution has connected us globally but has simultaneously fostered profound
+                            local isolation. Existing platforms (Twitter, Instagram, Facebook) lead to context collapse,
+                            status anxiety, and permanent digital archives.
+                        </p>
+
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">The Audience</h3>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                            <div
+                                style="background-color: #fef9c3; color: #333; padding: 1.25rem; box-shadow: 2px 4px 8px rgba(0,0,0,0.1); transform: rotate(-1deg);">
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: #111; font-size: 1rem;">The
+                                    Commuter</h4>
+                                <p class="text-body" style="font-size: 0.85rem; color: #333; line-height: 1.4;">
+                                    Surrounded by people on the train but feels entirely alone. Wants a low-stakes way
+                                    to say "hello".</p>
+                            </div>
+                            <div
+                                style="background-color: #fef9c3; color: #333; padding: 1.25rem; box-shadow: 2px 4px 8px rgba(0,0,0,0.1); transform: rotate(1deg);">
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: #111; font-size: 1rem;">The
+                                    New Local</h4>
+                                <p class="text-body" style="font-size: 0.85rem; color: #333; line-height: 1.4;">Just
+                                    moved to the city. Wants to find their "tribe" or vibe without the pressure of
+                                    dating apps.</p>
+                            </div>
+                            <div
+                                style="background-color: #fef9c3; color: #333; padding: 1.25rem; box-shadow: 2px 4px 8px rgba(0,0,0,0.1); transform: rotate(-0.5deg);">
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: #111; font-size: 1rem;">The
+                                    Introvert</h4>
+                                <p class="text-body" style="font-size: 0.85rem; color: #333; line-height: 1.4;">Has
+                                    deep thoughts but fears the permanence and judgment of public social media posts.
+                                </p>
+                            </div>
+                            <div
+                                style="background-color: #fef9c3; color: #333; padding: 1.25rem; box-shadow: 2px 4px 8px rgba(0,0,0,0.1); transform: rotate(1.5deg);">
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: #111; font-size: 1rem;">The
+                                    Student</h4>
+                                <p class="text-body" style="font-size: 0.85rem; color: #333; line-height: 1.4;">
+                                    On a massive campus but sticks to the same circle. Wants to find a study group or
+                                    pizza partner right now.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">The Analogy: The Ephemeral Travel Connection
+                        </h3>
+                        <p class="text-body"
+                            style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            The core value we sought to capture is the <strong>ephemeral travel connection</strong>: the
+                            spontaneous encounter with a stranger on a journey where you achieve a profound, fleeting
+                            moment of solidarity—a connection that serves its purpose for the moment and then dissolves
+                            naturally. <strong>Thought Bubbles is designed to create that high-quality, low-stakes,
+                                transient connection within the radius of your daily life.</strong>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 3. The Process -->
+                <section id="process" class="section" style="padding-top: 0;">
+                    <div style="max-width: 900px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">3. The Design Process: Iterations & Solutions
+                        </h2>
+                        <p class="text-body"
+                            style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            The design focused on overcoming critical technical and ethical hurdles through intentional,
+                            constrained iteration.
+                        </p>
+
+                        <!-- Iteration 1 -->
+                        <div style="margin-bottom: 4rem;">
+                            <h3 class="text-h3" style="margin-bottom: 1rem;">I. Solving the Matching Problem: Intent,
+                                Not Words</h3>
+                            <table
+                                style="width: 100%; border-collapse: collapse; font-size: 1rem; color: var(--color-text-light);">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 25%;">
+                                            Initial Challenge</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 40%;">
+                                            Design Solution</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 35%;">
+                                            Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Brittle Matching</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <em>Initial Idea:</em> Match users based on an <strong>exact text
+                                                match</strong> ("I want coffee"). This failed due to low conversational
+                                            relevance.
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            The system needed to connect <em>intent</em> (a craving) over literal text.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Semantic Matching (Solution)</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            Implemented a <strong>Natural Language Processing (NLP) engine</strong> to
+                                            automatically generate standardized, semantic hashtags (e.g.,
+                                            <code>#CoffeeCravings</code>, <code>#Loneliness</code>) from the user's
+                                            thought. The system prioritizes <strong>key concepts and intentions</strong>
+                                            over common words (<code>#Coffee</code> over <code>#Would</code>).
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>High-Fidelity Connection:</strong> Connects people based on
+                                            <strong>meaning and feeling</strong>, ensuring Bubbles are robust and
+                                            relevant.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Transparency Refinement</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            Added <strong>semantic hashtag suggestions</strong> below the composition
+                                            field, allowing users to select and guide the matching process.</td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>User Control & Trust:</strong> Made the complex NLP process
+                                            transparent and gave users control over how their thought is categorized.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div
+                            style="margin-top: 2rem; margin-bottom: 4rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/Search-DnvsCLtr.png" alt="Search Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/share_thought-Bi0Lsgkp.png" alt="Share Thought Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+
+                        <!-- Iteration 2 -->
+                        <div style="margin-bottom: 4rem;">
+                            <h3 class="text-h3" style="margin-bottom: 1rem;">II. Solving the Safety and Identity Problem
+                            </h3>
+                            <table
+                                style="width: 100%; border-collapse: collapse; font-size: 1rem; color: var(--color-text-light);">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 25%;">
+                                            Initial Challenge</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 40%;">
+                                            Design Solution</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 35%;">
+                                            Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Status Anxiety</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Mandatory 1-hour username refresh cooldown;</strong> <strong>No
+                                                profile pages</strong> (replaced by the functional <strong>"My Active
+                                                Thoughts" Tab</strong>).
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Anti-Status:</strong> Ensures the focus is always on the thought's
+                                            content, not the sender's anonymous "fame" or history.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Anonymity Risk</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Strictly Abstract Avatars</strong> (no recognizable symbols/photos).
+                                            <strong>Zero PII/Meetup Filter</strong> enforced by a dedicated service.
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Safety First:</strong> Maintained psychological safety by making
+                                            identity fluid and non-exploitable.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Toxicity Control</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Soft Muting</strong> (local user mute) and a focus on the
+                                            <strong>"Send Love"</strong> metric instead of aggressive engagement
+                                            tracking.
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Fostering Empathy:</strong> Guided user behavior toward kindness and
+                                            away from judgment.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            style="display: flex; justify-content: center; gap: 20px; margin-top: 2rem; margin-bottom:
+                            4rem; flex-wrap: wrap;">
+
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/safety-D1UBSou6.png" alt="Safety Features"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/privacy-DFzm9FVW.png" alt="Privacy Features"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+
+                        <!-- Iteration 3 -->
+                        <div style="margin-bottom: 4rem;">
+                            <h3 class="text-h3" style="margin-bottom: 1rem;">III. Solving the Geospatial & Ephemeral
+                                Problem</h3>
+                            <table
+                                style="width: 100%; border-collapse: collapse; font-size: 1rem; color: var(--color-text-light);">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 25%;">
+                                            Initial Challenge</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 40%;">
+                                            Design Solution</th>
+                                        <th
+                                            style="text-align: left; padding: 12px 0; border-bottom: 1px solid var(--color-border); font-weight: 600; color: var(--color-text); width: 35%;">
+                                            Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Digital Isolation</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Removed the Global History Feed.</strong> Implemented a strict
+                                            <strong>100-mile max search radius</strong> (adjustable by user in
+                                            Settings).
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Strict Local Focus:</strong> Forced the app to become a tool for the
+                                            immediate community, uniting the city or village.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Map Clutter</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Minimalist Map (Solution):</strong> <strong>Strictly suppressed all
+                                                map legends</strong> (streets, businesses, POIs).
+                                        </td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Focus on Sentiment:</strong> Transformed the map into a <strong>data
+                                                visualization</strong> tool where the only "points of interest" are
+                                            human feelings (the Bubbles).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Data Persistence</strong>
+                                        </td>
+                                        <td
+                                            style="padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            Implemented the <strong>24-Hour Bubble Lifespan</strong> enforced by a
+                                            critical backend <strong>Deletion Engine (Chron Job)</strong>.</td>
+                                        <td
+                                            style="padding: 12px 0; border-bottom: 1px solid var(--color-border); vertical-align: top;">
+                                            <strong>Reinforce Transience:</strong> Guarantees all data is deleted,
+                                            allowing users to be vulnerable without fear of permanent archive.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div
+                            style="margin-top: 2rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/home_light-Cbhve8ht.png" alt="Light Mode Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/homepage_darkmode-BGu5WzGQ.png" alt="Dark Mode Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. The Solution -->
+                <section id="solution" class="section" style="padding-top: 0;">
+                    <div style="max-width: 900px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">4. The Final Solution: Key Features & Backend
+                        </h2>
+
+                        <div style="margin-bottom: 3rem;">
+                            <p class="text-body"
+                                style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                                The solution is defined by robust backend technology supporting intentional front-end
+                                constraints:
+                            </p>
+
+                            <ul style="list-style: none; padding: 0; margin-bottom: 3rem;">
+                                <li
+                                    style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 1px solid var(--color-text);">
+                                    <strong style="display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">Core
+                                        Backend
+                                        Stack</strong>
+                                    <span style="color: var(--color-text-light);">Utilizes
+                                        <strong>PostGIS/GeoJSON</strong>
+                                        for rapid geospatial querying and a <strong>WebSockets</strong> service for
+                                        real-time chat routing.</span>
+                                </li>
+                                <li
+                                    style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 1px solid var(--color-text);">
+                                    <strong style="display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">The
+                                        Intentional Frontend</strong>
+                                    <span style="color: var(--color-text-light);">The minimalist Map View and the
+                                        transient
+                                        "My Active Thoughts" Tab ensure focus remains on the present.</span>
+                                </li>
+                                <li
+                                    style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 1px solid var(--color-text);">
+                                    <strong style="display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">The
+                                        Thought
+                                        Room</strong>
+                                    <span style="color: var(--color-text-light);">A flat, non-threaded chat interface
+                                        where
+                                        every user's <strong>unique Thought Intention</strong> is visible upon
+                                        joining,
+                                        providing full context for the collective conversation defined by the
+                                        <strong>primary hashtag.</strong></span>
+                                </li>
+                            </ul>
+
+                            <p class="text-body"
+                                style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                                <strong>Impact:</strong> Thought Bubbles offers users immediate validation and
+                                low-stakes
+                                connection, validating the emotional reality of their local community for a perfect,
+                                ephemeral moment.
+                            </p>
+                        </div>
+
+                        <div
+                            style="display: flex; justify-content: center; gap: 20px; margin-bottom: 2rem; flex-wrap: wrap;">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/my_thoughts-haJSNIhB.png" alt="My Thoughts Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="/assets/bubble_room_light-CiZ5JdTx.png" alt="Chat Interface"
+                                    style="width: 270px; height: auto; border-radius: 36px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </section>
+
+                <!-- 5. Reflection -->
+                <section id="reflection" class="section" style="padding-top: 0;">
+                    <div style="max-width: 800px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">5. Reflection & Next Steps</h2>
+                        <p class="text-body"
+                            style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--color-text-light);">
+                            Building Thought Bubbles was a lesson in digital sociology. It taught me that technical
+                            constraints (like a 24-hour deletion job) can actually create emotional freedom.
+                        </p>
+
+                        <div class="grid grid-2" style="gap: 2rem; margin-bottom: 3rem;">
+                            <div>
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">The
+                                    Highs</h4>
+                                <p class="text-body" style="color: var(--color-text-light);">
+                                    Seeing the first "Bubble" pop up on the map during testing was magical. It wasn't
+                                    just a pin; it was a feeling. The "Send Love" metric proved that positive
+                                    reinforcement loops can effectively replace toxic engagement bait.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-text);">The Lows
+                                </h4>
+                                <p class="text-body" style="color: var(--color-text-light);">
+                                    Realizing that "exact text matching" was a complete failure after spending a week
+                                    building it. It taught me that human intent is fuzzy, not binary, and required a
+                                    pivot to NLP-based hashtagging.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">What I'd Change</h3>
+                        <ul
+                            style="list-style: disc; padding-left: 20px; margin-bottom: 2rem; color: var(--color-text-light); font-size: 1.1rem;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Earlier Safety Testing:</strong> I underestimated
+                                the complexity of content moderation. I would integrate the AI safety filter at the
+                                wireframe stage next time, not as a patch.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Radius Flexibility:</strong> 100 miles is too
+                                large for dense cities like NYC. I would implement dynamic density-based radii (e.g., 5
+                                miles in Manhattan, 50 miles in rural areas).</li>
+                        </ul>
+
+                        <h3 class="text-h3" style="margin-bottom: 1rem;">Next Steps</h3>
+                        <p class="text-body" style="font-size: 1.1rem; color: var(--color-text-light);">
+                            I plan to launch a closed beta at a single university campus. This controlled environment is
+                            perfect for testing the "ephemeral connection" hypothesis in a dense, high-trust community
+                            before scaling to the open public.
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- Video Showcase -->
+                <section id="app-demo" class="section" style="padding-top: 0;">
+                    <div style="max-width: 800px;">
+                        <h2 class="text-h2" style="margin-bottom: 1.5rem;">6. Prototype</h2>
+                        <img src="/assets/video-C8oRxwRM.gif" alt="Thought Bubble App Demo"
+                            style="width: 70%; height: auto; border-radius: 36px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: block; margin: 0 auto;">
+                    </div>
+                </section>
+
+
+
+            </div>
+        </div>
+        <!-- Version: 2025-12-01 16:20 -->
+
+        <!-- Next Project -->
+        <section class="section" style="border-top: 1px solid var(--color-border); margin-top: 40px;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <p class="text-secondary" style="margin-bottom: 0.5rem;">Next Project</p>
+                        <h3 class="text-h3" style="margin-bottom: 0.5rem;">Colour Visualiser</h3>
+                        <p class="text-body" style="color: var(--color-text-light);">Augmented Reality / Mobile App</p>
+                    </div>
+                    <a href="/project-ar-visualiser.html" class="btn btn-outline">View Case Study</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Crafted with 100% Vibe Coding</p>
+        </div>
+    </footer>
+</body>
+
+</html>

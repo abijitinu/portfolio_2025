@@ -97,16 +97,49 @@
             </div>
         </section>
 
+        <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
+        <style>
+            /* Custom TOC positioning */
+            .floating-toc {
+                position: fixed;
+                top: 155px;
+                left: 2rem;
+                width: 200px;
+                z-index: 100;
+                display: none;
+                /* Hidden by default on mobile */
+            }
+
+            @media (min-width: 1200px) {
+                .floating-toc {
+                    display: block;
+                }
+
+                /* content stretches to fill container */
+                .project-layout {
+                    display: block !important;
+                }
+
+                .project-content {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <aside class="floating-toc">
+            <nav class="toc-nav">
+                <a href="#context" class="toc-link">The Context</a>
+                <a href="#brief" class="toc-link">The Brief</a>
+                <a href="#audience" class="toc-link">The Audience</a>
+                <a href="#process" class="toc-link">The Process</a>
+                <a href="#outcome" class="toc-link">The Outcome</a>
+            </nav>
+        </aside>
+
         <div class="container project-layout">
-            <aside class="project-sidebar">
-                <nav class="toc-nav">
-                    <a href="#context" class="toc-link">The Context</a>
-                    <a href="#brief" class="toc-link">The Brief</a>
-                    <a href="#audience" class="toc-link">The Audience</a>
-                    <a href="#process" class="toc-link">The Process</a>
-                    <a href="#outcome" class="toc-link">The Outcome</a>
-                </nav>
-            </aside>
+            <!-- Sidebar removed from here -->
 
             <div class="project-content">
                 <!-- Content -->

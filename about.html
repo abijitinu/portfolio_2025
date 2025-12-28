@@ -50,16 +50,49 @@
             </div>
         </section>
 
+        <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
+        <style>
+            /* Custom TOC positioning */
+            .floating-toc {
+                position: fixed;
+                top: 155px;
+                left: 2rem;
+                width: 200px;
+                z-index: 100;
+                display: none;
+                /* Hidden by default on mobile */
+            }
+
+            @media (min-width: 1200px) {
+                .floating-toc {
+                    display: block;
+                }
+
+                /* content stretches to fill container */
+                .project-layout {
+                    display: block !important;
+                }
+
+                .project-content {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <aside class="floating-toc">
+            <nav class="toc-nav">
+                <a href="#bio" class="toc-link">Bio</a>
+                <a href="#experience" class="toc-link">Experience</a>
+                <a href="#education" class="toc-link">Education</a>
+                <a href="#skills" class="toc-link">Skills</a>
+                <a href="#awards" class="toc-link">Awards</a>
+            </nav>
+        </aside>
+
         <div class="container project-layout">
-            <aside class="project-sidebar">
-                <nav class="toc-nav">
-                    <a href="#bio" class="toc-link">Bio</a>
-                    <a href="#experience" class="toc-link">Experience</a>
-                    <a href="#education" class="toc-link">Education</a>
-                    <a href="#skills" class="toc-link">Skills</a>
-                    <a href="#awards" class="toc-link">Awards</a>
-                </nav>
-            </aside>
+            <!-- Sidebar removed from here -->
 
             <div class="project-content">
                 <section id="bio" class="section" style="padding-top: 0;">

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <title>Thought Bubbles - Case Study</title>
-  <script type="module" crossorigin src="/assets/main-DnbdExEF.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-cvHD8Nsv.css">
-  <link rel="stylesheet" crossorigin href="/assets/project-layout-BI_RbJuC.css">
+    <script type="module" crossorigin src="/assets/main-DnbdExEF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-cvHD8Nsv.css">
+    <link rel="stylesheet" crossorigin href="/assets/project-layout-BI_RbJuC.css">
 </head>
 
 <body>
@@ -97,18 +97,51 @@
 
 
 
-        <div class="container project-layout">
-            <aside class="project-sidebar">
-                <nav class="toc-nav">
-                    <a href="#context-brief" class="toc-link">Context & Brief</a>
-                    <a href="#problem" class="toc-link">The Problem</a>
-                    <a href="#process" class="toc-link">Design Process</a>
-                    <a href="#solution" class="toc-link">Final Solution</a>
-                    <a href="#reflection" class="toc-link">Reflection</a>
-                    <a href="#app-demo" class="toc-link">Prototype</a>
+        <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
+        <style>
+            /* Custom TOC positioning */
+            .floating-toc {
+                position: fixed;
+                top: 155px;
+                left: 2rem;
+                width: 200px;
+                z-index: 100;
+                display: none;
+                /* Hidden by default on mobile */
+            }
 
-                </nav>
-            </aside>
+            @media (min-width: 1200px) {
+                .floating-toc {
+                    display: block;
+                }
+
+                /* content stretches to fill container */
+                .project-layout {
+                    display: block !important;
+                }
+
+                .project-content {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <aside class="floating-toc">
+            <nav class="toc-nav">
+                <a href="#context-brief" class="toc-link">Context & Brief</a>
+                <a href="#problem" class="toc-link">The Problem</a>
+                <a href="#process" class="toc-link">Design Process</a>
+                <a href="#solution" class="toc-link">Final Solution</a>
+                <a href="#reflection" class="toc-link">Reflection</a>
+                <a href="#app-demo" class="toc-link">Prototype</a>
+
+            </nav>
+        </aside>
+
+        <div class="container project-layout">
+            <!-- Sidebar removed from here -->
 
             <div class="project-content">
 

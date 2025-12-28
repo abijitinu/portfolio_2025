@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DZgy0Lux.svg">
     <title>Sales Analysis Portal - Case Study</title>
-  <script type="module" crossorigin src="/assets/main-CuL1g97f.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DI5uTe4I.css">
-  <link rel="stylesheet" crossorigin href="/assets/project-layout-ohWViQEQ.css">
+  <script type="module" crossorigin src="/assets/main-cvHD8Nsv-OE0St5E_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-cvHD8Nsv-cvHD8Nsv.css">
+  <link rel="stylesheet" crossorigin href="/assets/project-layout-BI_RbJuC-BI_RbJuC.css">
 </head>
 
 <body>
@@ -45,6 +45,12 @@
                         receipt.
                     </p>
 
+                    <div style="margin-bottom: 2rem;">
+                        <a href="https://abijitinu.github.io/RSAP/" target="_blank" class="btn btn-outline"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem;">View Live Prototype <span
+                                style="font-size: 1.2em; line-height: 1;">↗</span></a>
+                    </div>
+
                     <div class="project-stats-container">
                         <div class="project-stat-group">
                             <div class="project-stat-label">Company</div>
@@ -78,24 +84,55 @@
         <!-- Main Image -->
         <section style="margin-bottom: 80px;">
             <div class="container">
-                <div
-                    style="width: 100%; height: 500px; background-color: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: #ccc; font-size: 1.5rem;">Hero Image Placeholder</span>
-                </div>
+                <img src="/assets/sales-portal-dashboard-full-BXBBToz6.png" alt="Sales Analysis Portal Dashboard"
+                    style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
             </div>
         </section>
 
+        <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
+        <style>
+            /* Custom TOC positioning */
+            .floating-toc {
+                position: fixed;
+                top: 155px;
+                left: 2rem;
+                width: 200px;
+                z-index: 100;
+                display: none;
+                /* Hidden by default on mobile */
+            }
+
+            @media (min-width: 1200px) {
+                .floating-toc {
+                    display: block;
+                }
+
+                /* content stretches to fill container */
+                .project-layout {
+                    display: block !important;
+                }
+
+                .project-content {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <aside class="floating-toc">
+            <nav class="toc-nav">
+                <a href="#context" class="toc-link">The Context</a>
+                <a href="#brief" class="toc-link">The Brief</a>
+                <a href="#audience" class="toc-link">The Audience</a>
+                <a href="#process" class="toc-link">The Process</a>
+                <a href="#solution" class="toc-link">The Solution</a>
+                <a href="#outcome" class="toc-link">The Outcome</a>
+            </nav>
+        </aside>
+
         <div class="container project-layout">
-            <aside class="project-sidebar">
-                <nav class="toc-nav">
-                    <a href="#context" class="toc-link">The Context</a>
-                    <a href="#brief" class="toc-link">The Brief</a>
-                    <a href="#audience" class="toc-link">The Audience</a>
-                    <a href="#process" class="toc-link">The Process</a>
-                    <a href="#solution" class="toc-link">The Solution</a>
-                    <a href="#outcome" class="toc-link">The Outcome</a>
-                </nav>
-            </aside>
+            <!-- Sidebar removed from here -->
 
             <div class="project-content">
                 <!-- Content -->
@@ -192,54 +229,112 @@
                             </p>
                         </div>
                     </div>
+                    <img src="/assets/sales-portal-trend-status-fDnzoYd1.png" alt="Sales Volume Trend Analysis"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Processing Performance</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        To maximize efficiency, we track upload times and processing peaks. This visualization creates a
+                        clear picture of system load throughout the day.
+                    </p>
+                    <img src="/assets/sales-portal-upload-time-C-wr-H5C.png" alt="Upload Time Distribution"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
 
                     <h3 class="text-h3" style="margin-bottom: 1rem;">Receipt Analysis</h3>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        This feature allows administrators to view receipts as a list, filter them by various criteria,
-                        and pinpoint specific entries for detailed inspection.
+                        A powerful grid view allowing administrators to filter and manage millions of receipts with
+                        sub-second latency.
                     </p>
-                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">ML-Powered Validation</h4>
-                    <p class="text-body"
-                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        The system uses Machine Learning to determine if a bill is genuine and if it contains the
-                        promoted products or cashback offers. Receipts are segregated based on a scoring system that
-                        evaluates criteria such as:
-                    </p>
-                    <ul
-                        style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
-                        <li style="margin-bottom: 0.5rem;">Receipt dictation and alignment</li>
-                        <li style="margin-bottom: 0.5rem;">Image integrity (tampering check)</li>
-                        <li style="margin-bottom: 0.5rem;">OCR confidence score</li>
-                    </ul>
-                    <p class="text-body"
-                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        <strong>Threshold:</strong> Only receipts with a confidence score above 90% are automatically
-                        selected for further processing, ensuring high data quality.
-                    </p>
+                    <img src="/assets/sales-portal-receipt-list-DlG4mgJl.png" alt="Receipt List View"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
 
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">Offer Creation</h3>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Detailed Inspection</h4>
+                    <p class="text-body" style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+                        Administrators can drill down into individual receipts to verify line items, check OCR accuracy,
+                        and confirm merchant details.
+                    </p>
+                    <img src="/assets/sales-portal-receipt-detail-CHVCAk7_.png" alt="Receipt Detail View"
+                        style="width: 50%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Process & Validation</h4>
+                    <div class="grid grid-2" style="gap: 2rem; align-items: center; margin-bottom: 3rem;">
+                        <div>
+                            <p class="text-body"
+                                style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--color-text-light);">
+                                The system uses Machine Learning to score every receipt. High-confidence receipts (>90%)
+                                are auto-approved, while ambiguous ones are flagged for manual review.
+                            </p>
+                            <ul
+                                style="list-style: disc; padding-left: 20px; color: var(--color-text-light); font-size: 1.1rem;">
+                                <li style="margin-bottom: 0.5rem;">Tampering checks</li>
+                                <li style="margin-bottom: 0.5rem;">Date verification</li>
+                                <li style="margin-bottom: 0.5rem;">Merchant matching</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="/assets/sales-portal-confidence-score-4bzYCozy.png" alt="ML Confidence Score Widget"
+                                style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        </div>
+                    </div>
+
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Fraud Control Dashboard</h4>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        Given the diverse ecosystem of retailers and tenants, we built a flexible offer creation tool.
-                        Users can input detailed parameters, integrate product masters, and select specific retailers to
-                        tailor offers effectively.
+                        A dedicated view for monitoring risk. We visualize fraud detection history to spot attack
+                        patterns and prioritize the review queue based on risk scores.
                     </p>
+                    <img src="/assets/sales-portal-fraud-control-BFJ7_VoK.png" alt="Fraud Control Dashboard"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Offer Management</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Campaign managers can track the status of all promotional offers in one place. The list view
+                        provides a quick snapshot of active, scheduled, and expired campaigns, along with their budget
+                        utilization.
+                    </p>
+                    <img src="/assets/sales-portal-offer-list-v2-BZQ2r8Po.png" alt="Offer List Management"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+
 
                     <h3 class="text-h3" style="margin-bottom: 1rem;">Ticketing System (L1 Support)</h3>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        To support the multi-user nature of the portal, we integrated an advanced ticketing system for
-                        customer care teams. They can contact customers directly or raise internal requests to resolve
-                        issues efficiently.
+                        To support the multi-user nature of the portal, we integrated an advanced ticketing system.
+                        Support agents have a specialized dashboard to manage incoming queries, escalate issues, and
+                        maintain SLAs.
                     </p>
-
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">Subscription Management</h3>
+                    <img src="/assets/sales-portal-ticket-list-Ca6twvQh.png" alt="Support Ticket Dashboard"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                     <p class="text-body"
-                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        Flexible subscription plans allow clients to purchase "chunks" of additional receipt scans as
-                        needed, enabling them to scale their usage without migrating to a completely new plan.
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        The detail view provides context-aware history, allowing agents to see previous actions and
+                        receipts associated with the ticket instantly.
                     </p>
+                    <img src="/assets/sales-portal-ticket-detail-BHrQOn2F.png" alt="Ticket Detail View"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Subscription Management & Scale</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Flexible subscription plans allow clients to purchase "chunks" of additional receipt scans as
+                        needed. The interface clearly visualizes quota usage and allows for seamless upgrades.
+                    </p>
+                    <img src="/assets/sales-portal-subscription-CNP2Aly1.png" alt="Subscription Management"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">On-Demand Reporting</h3>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        Stakeholders can generate detailed audit logs and performance reports instantly. This self-serve
+                        model reduces the burden on the data team.
+                    </p>
+                    <img src="/assets/sales-portal-reports-KzejfUTx.png" alt="Reports and Analytics Hub"
+                        style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 </section>
 
                 <section id="outcome" class="section" style="padding-top: 0;">

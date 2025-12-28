@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DZgy0Lux.svg">
     <title>Campaign System - Case Study</title>
-  <script type="module" crossorigin src="/assets/main-CuL1g97f.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DI5uTe4I.css">
-  <link rel="stylesheet" crossorigin href="/assets/project-layout-ohWViQEQ.css">
+  <script type="module" crossorigin src="/assets/main-cvHD8Nsv-OE0St5E_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-cvHD8Nsv-cvHD8Nsv.css">
+  <link rel="stylesheet" crossorigin href="/assets/project-layout-BI_RbJuC-BI_RbJuC.css">
 </head>
 
 <body>
@@ -84,17 +84,50 @@
             </div>
         </section>
 
+        <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
+        <style>
+            /* Custom TOC positioning */
+            .floating-toc {
+                position: fixed;
+                top: 155px;
+                left: 2rem;
+                width: 200px;
+                z-index: 100;
+                display: none;
+                /* Hidden by default on mobile */
+            }
+
+            @media (min-width: 1200px) {
+                .floating-toc {
+                    display: block;
+                }
+
+                /* content stretches to fill container */
+                .project-layout {
+                    display: block !important;
+                }
+
+                .project-content {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <aside class="floating-toc">
+            <nav class="toc-nav">
+                <a href="#context" class="toc-link">The Context</a>
+                <a href="#brief" class="toc-link">The Brief</a>
+                <a href="#audience" class="toc-link">The Audience</a>
+                <a href="#process" class="toc-link">The Process</a>
+                <a href="#solution" class="toc-link">The Solution</a>
+                <a href="#outcome" class="toc-link">The Outcome</a>
+            </nav>
+        </aside>
+
         <div class="container project-layout">
-            <aside class="project-sidebar">
-                <nav class="toc-nav">
-                    <a href="#context" class="toc-link">The Context</a>
-                    <a href="#brief" class="toc-link">The Brief</a>
-                    <a href="#audience" class="toc-link">The Audience</a>
-                    <a href="#process" class="toc-link">The Process</a>
-                    <a href="#solution" class="toc-link">The Solution</a>
-                    <a href="#outcome" class="toc-link">The Outcome</a>
-                </nav>
-            </aside>
+            <!-- Sidebar removed from here -->
 
             <div class="project-content">
                 <!-- Content -->
@@ -165,7 +198,7 @@
                     </p>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-1-BvI0_GgW.png" alt="Campaign System Homepage"
+                        <img src="/assets/cs-1-BvI0_GgW-BvI0_GgW.png" alt="Campaign System Homepage"
                             style="width: 100%; height: auto; display: block;">
                     </div>
 
@@ -183,7 +216,7 @@
                     </ul>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-2-BBkadngd.png" alt="Campaign System Dashboard Interface"
+                        <img src="/assets/cs-2-BBkadngd-BBkadngd.png" alt="Campaign System Dashboard Interface"
                             style="width: 100%; height: auto; display: block;">
                     </div>
 
@@ -205,7 +238,7 @@
                     </ul>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-3-B01R_OTJ.png" alt="Campaign System IAM Module"
+                        <img src="/assets/cs-3-B01R_OTJ-B01R_OTJ.png" alt="Campaign System IAM Module"
                             style="width: 100%; height: auto; display: block;">
                     </div>
 
@@ -218,7 +251,7 @@
                     </p>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-4-8j8AVDuV.png" alt="Campaign System Custom Reports"
+                        <img src="/assets/cs-4-8j8AVDuV-8j8AVDuV.png" alt="Campaign System Custom Reports"
                             style="width: 100%; height: auto; display: block;">
                     </div>
                 </section>

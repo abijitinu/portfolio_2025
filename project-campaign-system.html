@@ -43,6 +43,11 @@
                         style="color: var(--color-text-light); font-weight: 400; max-width: 700px; margin-bottom: 2rem;">
                         A web portal to create, maintain, analyze, and optimize marketing campaigns.
                     </p>
+                    <div style="margin-bottom: 2rem;">
+                        <a href="https://abijitinu.github.io/GCS/" target="_blank" class="btn btn-outline"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem;">View Live Prototype <span
+                                style="font-size: 1.2em; line-height: 1;">↗</span></a>
+                    </div>
 
                     <div class="project-stats-container">
                         <div class="project-stat-group">
@@ -76,12 +81,7 @@
 
         <!-- Main Image -->
         <section style="margin-bottom: 80px;">
-            <div class="container">
-                <div
-                    style="width: 100%; height: 500px; background-color: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: #ccc; font-size: 1.5rem;">Hero Image Placeholder</span>
-                </div>
-            </div>
+
         </section>
 
         <!-- Sidebar / TOC - Moved out of main container for isolated positioning -->
@@ -163,10 +163,118 @@
                     <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Audience</h2>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        The primary users of this system are <strong>Brand Managers</strong>, <strong>Regional Marketing
-                            Leads</strong>, and <strong>System Administrators</strong>. They need a tool that is
+                        The system is designed for a diverse range of stakeholders. They need a tool that is
                         powerful yet intuitive enough to manage complex data without requiring deep technical knowledge.
+                        Key user roles include:
                     </p>
+                    <div
+                        style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3rem; margin-top: 1rem;">
+                        <!-- Super Admin -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: #F3F4F6; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #4B5563;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-h4" style="margin: 0 0 0.25rem 0; font-size: 1.1rem;">Super Admin</h4>
+                                <p class="text-body"
+                                    style="margin: 0; font-size: 1rem; color: var(--color-text-light);">
+                                    Maintains full control over the system, users, and global configurations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Brand Manager -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: #E0E7FF; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #4338ca;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-h4" style="margin: 0 0 0.25rem 0; font-size: 1.1rem;">Brand Manager</h4>
+                                <p class="text-body"
+                                    style="margin: 0; font-size: 1rem; color: var(--color-text-light);">
+                                    Oversees brand strategy, asset consistency, and high-level campaign direction.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Manager -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: #DCFCE7; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #15803d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z">
+                                    </path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-h4" style="margin: 0 0 0.25rem 0; font-size: 1.1rem;">Campaign Manager
+                                </h4>
+                                <p class="text-body"
+                                    style="margin: 0; font-size: 1rem; color: var(--color-text-light);">
+                                    Executes specific initiatives, manages timelines, and tracks performance metrics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Country Manager -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: #FEF3C7; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #b45309;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-h4" style="margin: 0 0 0.25rem 0; font-size: 1.1rem;">Country Manager
+                                </h4>
+                                <p class="text-body"
+                                    style="margin: 0; font-size: 1rem; color: var(--color-text-light);">
+                                    Adapts global strategies to local markets and ensures regional compliance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Admin -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: #F3F4F6; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #4B5563;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-h4" style="margin: 0 0 0.25rem 0; font-size: 1.1rem;">Admin</h4>
+                                <p class="text-body"
+                                    style="margin: 0; font-size: 1rem; color: var(--color-text-light);">
+                                    Handles user requests, troubleshooting, and daily operational support.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="process" class="section" style="padding-top: 0;">
@@ -189,38 +297,52 @@
                 <section id="solution" class="section" style="padding-top: 0;">
                     <h2 class="text-h2" style="margin-bottom: 1.5rem;">The Solution</h2>
 
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">Homepage</h3>
-                    <p class="text-body"
-                        style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        The homepage provides a high-level overview of client engagements. Users can see a glimpse of
-                        the brands being handled, the number of active and delivered campaigns, country exposure, and
-                        total opt-in statistics.
-                    </p>
+
+
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Campaign Management</h3>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-1-BvI0_GgW-BvI0_GgW.png" alt="Campaign System Homepage"
+                        <img src="/images/cs-campaign-management.png"
+                            alt="Campaign System Campaign Management Interface"
                             style="width: 100%; height: auto; display: block;">
                     </div>
-
-                    <h3 class="text-h3" style="margin-bottom: 1rem;">Dashboard</h3>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
-                        The dashboard offers multi-level filtering to drill down into specific campaigns. It presents
-                        comprehensive data including:
+                        A centralized view allows users to track all global initiatives. Visual status indicators and
+                        budget tacking help managers stay on top of their deliverables.
+                    </p>
+
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Dashboard</h3>
+                    <div
+                        style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <img src="/images/cs-dashboard-main.png" alt="Campaign System Dashboard Interface"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        The dashboard serves as the command center for campaign oversight, offering real-time visibility
+                        into performance across brands and regions. Key features include:
                     </p>
                     <ul
                         style="list-style: disc; padding-left: 20px; margin-bottom: 3rem; color: var(--color-text-light); font-size: 1.1rem;">
-                        <li style="margin-bottom: 0.5rem;">Total and Unique Visitors</li>
-                        <li style="margin-bottom: 0.5rem;">Total Registrations (Opt-in users)</li>
-                        <li style="margin-bottom: 0.5rem;">Survey metrics related to campaigns</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>High-Level Metrics:</strong> Instant access to KPI's
+                            like
+                            Total Campaigns, Active Brands, Reach, and Engagement.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Engagement Overview:</strong> An interactive chart
+                            visualizing performance trends over time.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Active Campaigns:</strong> A quick-view list of
+                            campaigns with their current status (Active, Planning, or Review).</li>
                     </ul>
-                    <div
-                        style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-2-BBkadngd-BBkadngd.png" alt="Campaign System Dashboard Interface"
-                            style="width: 100%; height: auto; display: block;">
-                    </div>
+
 
                     <h3 class="text-h3" style="margin-bottom: 1rem;">IAM Module</h3>
+                    <div
+                        style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <img src="/images/cs-iam-main.png" alt="Campaign System IAM & Security Interface"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         For a multi-locale company, managing access across different levels is critical. The Identity
@@ -236,24 +358,34 @@
                             for themselves or others with comments. Admins can review, accept, or reject requests with
                             feedback.</li>
                     </ul>
-                    <div
-                        style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-3-B01R_OTJ-B01R_OTJ.png" alt="Campaign System IAM Module"
-                            style="width: 100%; height: auto; display: block;">
-                    </div>
+
 
                     <h3 class="text-h3" style="margin-bottom: 1rem;">Custom Reports</h3>
+                    <div
+                        style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <img src="/images/cs-reports-main.png" alt="Campaign System Custom Reports Interface"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
                     <p class="text-body"
                         style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
                         Reports are highly customizable to handle data from multiple brands, campaigns, and locales.
                         Since a single campaign can run across different countries, the system allows for generating
                         separate data reports for each locale as well as combined global reports.
                     </p>
+
+
+                    <h3 class="text-h3" style="margin-bottom: 1rem;">Support Center</h3>
                     <div
                         style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <img src="/assets/cs-4-8j8AVDuV-8j8AVDuV.png" alt="Campaign System Custom Reports"
+                        <img src="/images/cs-support-main.png" alt="Campaign System Support Center Interface"
                             style="width: 100%; height: auto; display: block;">
                     </div>
+                    <p class="text-body"
+                        style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-light);">
+                        To ensure smooth adoption, a built-in support center provides instant access to FAQs,
+                        documentation, and a ticketing system for bug reporting.
+                    </p>
+
                 </section>
 
                 <section id="outcome" class="section" style="padding-top: 0;">
